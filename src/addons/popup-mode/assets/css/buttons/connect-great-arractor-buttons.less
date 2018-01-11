@@ -1,0 +1,167 @@
+.connect-great-attractor-buttons() {
+  .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor {
+
+    .onp-sl-button {
+      background-color: transparent;
+      border-radius: 3px;
+      padding: 0px;
+      border: 0px;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.03);
+      color: #111;
+
+      &:hover {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
+        background-color: transparent;
+      }
+
+      &:hover .onp-sl-short {
+        display: inline;
+      }
+
+      &:hover .onp-sl-long {
+        display: none;
+      }
+
+      &:hover .onp-sl-icon {
+        width: 40px;
+      }
+
+      &:hover .onp-sl-connect-button {
+        left: 40px;
+        background: #f9f9f9;
+      }
+    }
+
+    .onp-sl-connect-button {
+      text-align: left;
+      padding-left: 15px;
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      right: 0px;
+      bottom: 0px;
+      font-size: 13px;
+      line-height: 50px;
+      font-weight: normal;
+      background: #f0f0f0;
+      border: 1px solid #c9c9c9;
+      border-left: 0px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      overflow: hidden;
+      white-space: nowrap;
+      background: -moz-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f6f6f6)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #fdfdfd 0%, #f6f6f6 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f6f6f6', GradientType=0); /* IE6-9 */
+      -webkit-transition: left .3s;
+      transition: left .3s;
+    }
+
+    .onp-sl-state-loading,
+    .onp-sl-state-error {
+      background: #fff;
+      box-shadow: none;
+      border: 1px solid #f2f2f2;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    /* :: Buttons, Icon :: */
+
+    .onp-sl-icon {
+      //height: 50px;
+      width: 5px;
+      background-image: url("../img/social-icons.png");
+      background-repeat: no-repeat;
+      background-position-y: 50%;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      -webkit-transition: width .3s;
+      transition: width .3s;
+    }
+
+    .onp-sl-facebook .onp-sl-icon {
+      background-position: 15px 15px;
+      background-color: #989de1;
+      border: 1px solid #7e85e1;
+    }
+
+    .onp-sl-twitter .onp-sl-icon {
+      background-position: -133px 16px;
+      background-color: #55acee;
+      border: 1px solid #2b9aee;
+    }
+
+    .onp-sl-google .onp-sl-icon {
+      background-position: -18px 16px;
+      background-color: #f47665;
+      border: 1px solid #f45944;
+    }
+
+    .onp-sl-linkedin .onp-sl-icon {
+      background-position: -60px 15px;
+      background-color: #0077b5;
+      border: 1px solid #036a9e;
+    }
+
+    .onp-sl-vk .onp-sl-icon {
+      background-position: -172px 16px;
+      background-color: #6287AE;
+      border: 1px solid #036a9e;
+    }
+    /* :: As First Group :: */
+
+    /*&.onp-sl-first-group {
+      padding-bottom: 0px;
+    }*/
+
+    /* :: As Last Group :: */
+
+    &.onp-sl-last-group {
+      padding-top: 0px;
+    }
+
+    &.onp-sl-last-group .onp-sl-control {
+      width: 140px;
+      height: 40px;
+    }
+
+    &.onp-sl-last-group .onp-sl-icon {
+      height: 40px;
+      width: 5px;
+    }
+
+    &.onp-sl-last-group .onp-sl-facebook .onp-sl-icon {
+      background-position: 15px 10px;
+    }
+
+    &.onp-sl-last-group .onp-sl-twitter .onp-sl-icon {
+      background-position: -133px 10px;
+    }
+
+    &.onp-sl-last-group .onp-sl-google .onp-sl-icon {
+      background-position: -18px 11px;
+    }
+
+    &.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon {
+      background-position: -60px 10px;
+    }
+
+    &.onp-sl-last-group .onp-sl-vk .onp-sl-icon {
+      background-position: -172px 10px;
+    }
+
+    &.onp-sl-last-group .onp-sl-connect-button {
+      line-height: 40px;
+    }
+  }
+}

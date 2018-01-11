@@ -1,0 +1,46 @@
+/*
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['free','premium']
+ */
+/* --------------------------------
+/* Theme Secrets
+/* -------------------------------*/
+.onp-sl-secrets .onp-sl-ok .onp-sl-overlay-front {
+  background: #fe8c19;
+  background: -moz-linear-gradient(top, #fe8c19 0%, #e67401 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe8c19), color-stop(100%, #e67401));
+  background: -webkit-linear-gradient(top, #fe8c19 0%, #e67401 100%);
+  background: -o-linear-gradient(top, #fe8c19 0%, #e67401 100%);
+  background: -ms-linear-gradient(top, #fe8c19 0%, #e67401 100%);
+  background: linear-gradient(to bottom, #fe8c19 0%, #e67401 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe8c19', endColorstr='#e67401', GradientType=0);
+}
+.onp-sl-secrets .onp-sl-ok .onp-sl-overlay-icon {
+  background-position: -95px 7px;
+}
+.onp-sl-secrets .onp-sl-ok .onp-sl-overlay-back {
+  background: #fe8c19;
+}
+.onp-sl-secrets .onp-sl-ok .onp-sl-overlay-header {
+  background-color: #e37201;
+}
+/* --------------------------------
+/* Theme Flat
+/* -------------------------------*/
+.onp-sl-flat .onp-sl-ok .onp-sl-overlay-front {
+  background-color: #fe8c19;
+  border-bottom-color: #e37201;
+}
+.onp-sl-flat .onp-sl-ok .onp-sl-overlay-icon {
+  background-position: -238px 7px;
+}
+.onp-sl-flat .onp-sl-ok .onp-sl-overlay-back {
+  background: #fe8c19;
+}
+.onp-sl-flat .onp-sl-ok .onp-sl-overlay-header {
+  background-color: #e37201;
+}

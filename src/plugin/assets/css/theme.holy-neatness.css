@@ -1,0 +1,288 @@
+/**
+ * Pure Style
+ * Copyright 2014, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:false
+ * @!lang:[]
+ * @!build:[]
+ */
+.onp-sl-holy-neatness {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+}
+
+.onp-sl-holy-neatness .onp-sl-outer-wrap {
+    border-bottom: 3px solid #e8e8e8;
+    border-radius: 3px;
+}
+
+.onp-sl-holy-neatness .onp-sl-timer {
+    bottom: 7px;
+    right: 6px;
+}
+
+/* Terms */
+
+.onp-sl-holy-neatness .onp-sl-terms {
+    border-top: 1px solid #d6d6d6;
+    background-color: #f9f9f9;
+
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0px;
+}
+
+.onp-sl-holy-neatness .onp-sl-terms-inner-wrap {
+    border-top: 1px solid #eaeaea;
+    padding: 6px 0 4px 0;
+}
+
+.onp-sl-holy-neatness .onp-sl-line-separator {
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+/* Simple Buttons */
+
+.onp-sl-holy-neatness .onp-sl-button {
+    border-radius: 3px;
+    height: 40px;
+    color: #363636;
+    background: #f0f0f0;
+    border: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 1px 20px 0 20px;
+}
+
+.onp-sl-holy-neatness .onp-sl-button:hover {
+    background: #e0e0e0;
+}
+
+.onp-sl-holy-neatness .onp-sl-button.load:before {
+    background: url("../img/button_loader-22c4a2.gif");
+}
+
+/** ---
+* Connect Buttons
+*/
+
+/* Common */
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-control {
+    border-radius: 3px;
+    border-bottom: 2px solid #ddd;
+    height: 45px;
+    overflow: hidden;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-control,
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-control * {
+    color: #fff;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-control:hover {
+
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-control .onp-sl-short {
+    display: inline;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-control .onp-sl-long {
+    display: none;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-state-loading,
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-state-error {
+    background-color: #fff !important;
+    border: 1px solid #f2f2f2 !important;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-state-error .onp-sl-control-inner-wrap {
+    padding-top: 12px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-facebook {
+    background: #4263a9;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-twitter {
+    background: #4086cc;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-google {
+    background-color: #dd4a38;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-linkedin {
+    background-color: #0077b5;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-facebook:hover {
+    background-color: #4f6fb4;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-twitter:hover {
+    background-color: #5094d7;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-google:hover {
+    background-color: #e95947;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-linkedin:hover {
+    background-color: #1e90c9;
+}
+
+/* Common, Icon */
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-icon {
+    height: 45px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("../img/social-icons.png");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-facebook .onp-sl-icon {
+    background-position: 15px 13px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-twitter .onp-sl-icon {
+    background-position: -133px 14px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-google .onp-sl-icon {
+    background-position: -18px 14px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-linkedin .onp-sl-icon {
+    background-position: -60px 12px;
+}
+
+/* Common, Text */
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons .onp-sl-connect-button {
+    text-align: left;
+    padding-left: 15px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 13px;
+    line-height: 45px;
+    font-weight: normal;
+}
+
+/* As Single */
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-single-group {
+    padding-bottom: 20px;
+}
+
+/* As First Group */
+
+.onp-sl-holy-neatness.onp-sl-subscription-enabled .onp-sl-connect-buttons.onp-sl-first-group {
+    padding-bottom: 0px;
+}
+
+/* As Last Group */
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group {
+    padding-top: 0px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-text {
+    margin-bottom: 10px;
+}
+
+.onp-sl-holy-neatness .onp-sl-line-separator .onp-sl-title {
+    background-color: #fff;
+    color: #e1e1e1;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-control {
+    width: 140px;
+    height: 35px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-icon {
+    height: 35px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-facebook .onp-sl-icon {
+    background-position: 15px 8px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-twitter .onp-sl-icon {
+    background-position: -133px 8px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-google .onp-sl-icon {
+    background-position: -18px 9px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon {
+    background-position: -60px 8px;
+}
+
+.onp-sl-holy-neatness .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-connect-button {
+    line-height: 35px;
+}
+
+/** ---
+* Subscription
+*/
+
+/* Common */
+
+.onp-sl-holy-neatness .onp-sl-subscription .onp-sl-input {
+    border-radius: 3px;
+    border: 1px solid #d8dbe2;
+    height: 40px;
+}
+
+/* As Single */
+
+/* As First Group */
+
+.onp-sl-holy-neatness .onp-sl-subscription.onp-sl-first-group .onp-sl-button {
+    background-color: #22c4a2;
+    color: #fff;
+}
+
+.onp-sl-holy-neatness .onp-sl-subscription.onp-sl-first-group .onp-sl-button:hover {
+    background-color: #31ccab;;
+}
+
+/* - add your rules here - */
+
+/* As Last Group */
+
+.onp-sl-holy-neatness .onp-sl-subscription.onp-sl-last-group.onp-sl-separator-hides {
+    padding: 10px 0 30px 0;
+}
+
+/* As Screen */
+
+/* - add your rules here - */

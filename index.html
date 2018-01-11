@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+var base = {
+	some: 1,
+	show: function(){
+		console.log(this.some);
+	}
+};
+
+var child1 = {
+	showChile: function() {
+		console.log('showChile: ' + this.some);
+	}
+}
+console.log( child1 );
+child1.prototype = Object.create(base);
+console.log( child1 );
+var child2 = Object.create(base);
+
+child2.some = 2;
+
+child1.show();
+child1.showChile();
+child2.show();
+
+</script>
+</body>
+</html>

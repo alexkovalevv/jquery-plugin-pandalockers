@@ -1,0 +1,397 @@
+/**
+ * Great Attractor
+ * Copyright 2014, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['premium', 'full-free', 'full-premium']
+ */
+
+/** ---
+* Container 
+*/
+
+.onp-sl-great-attractor {
+    background-color: transparent;
+    padding: 0;
+}
+
+.onp-sl-great-attractor.onp-sl-email-locker {
+    max-width: 550px;
+}
+
+.onp-sl-overlap-box .onp-sl-great-attractor.onp-sl-email-locker.onp-sl-contains-single-group,
+.onp-sl-great-attractor.onp-sl-custom-form.onp-sl-contains-single-group {
+    max-width: 500px;
+}
+
+.onp-sl-great-attractor .onp-sl-outer-wrap {
+    margin: auto;
+    border: 1px solid #c1c1c1;
+    border-top: 0px;
+    border-radius: 7px;
+    -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.17);
+    background: #fff url("../img/ga-top-border.png") top center repeat-x;
+    padding: 5px 0 0 0;
+}
+
+.onp-sl-great-attractor .onp-sl-inner-wrap {
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+/** ---
+* Buttons 
+*/
+
+.onp-sl-great-attractor .onp-sl-input,
+.onp-sl-great-attractor .onp-sl-button {
+    border-radius: 3px;
+}
+
+.onp-sl-great-attractor .onp-sl-input {
+    width: 100%;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.onp-sl-great-attractor .onp-sl-button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    background: -moz-linear-gradient(top, #fefefe 0%, #f2f2f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fefefe 0%, #f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fefefe 0%, #f2f2f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fefefe 0%, #f2f2f2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fefefe 0%, #f2f2f2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f2f2f2', GradientType=0); /* IE6-9 */
+}
+
+.onp-sl-great-attractor .onp-sl-button,
+.onp-sl-great-attractor .onp-sl-button:disabled {
+    color: #363636;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    background: #f0f0f0;
+    border: 1px solid #c9c9c9;
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #f0f0f0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f0f0f0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fcfcfc 0%, #f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fcfcfc 0%, #f0f0f0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fcfcfc 0%, #f0f0f0 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fcfcfc 0%, #f0f0f0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f0f0f0', GradientType=0); /* IE6-9 */
+    cursor: pointer;
+}
+
+.onp-sl-great-attractor .onp-sl-button:disabled {
+    cursor: default;
+}
+
+/** ---
+* Terms 
+*/
+
+.onp-sl-great-attractor .onp-sl-terms {
+    border-top: 1px solid #d6d6d6;
+    background-color: #f9f9f9;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.onp-sl-great-attractor .onp-sl-terms-inner-wrap {
+    border-top: 1px solid #eaeaea;
+    padding: 10px 40px;
+}
+
+/** ---
+* Timer & Cross 
+*/
+
+.onp-sl-great-attractor .onp-sl-cross {
+    top: 9px;
+    right: 5px;
+    opacity: 0.08;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=8);
+}
+
+.onp-sl-great-attractor:hover .onp-sl-cross {
+    opacity: 0.15;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=15);
+}
+
+.onp-sl-great-attractor .onp-sl-cross:hover {
+    opacity: 0.6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+.onp-sl-great-attractor .onp-sl-timer {
+    bottom: 6px;
+    right: 7px;
+}
+
+/** ---
+* Separators 
+*/
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator {
+    border-bottom: 0 dashed #efefef;
+    height: auto;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title {
+    background-color: #f9f9f9;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    border-radius: 4px;
+    width: 38px;
+    height: 24px;
+    border-radius: 3px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:before {
+    right: -175px;
+}
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:after {
+    left: -175px;
+}
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:after,
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 160px;
+    margin-top: -1px;
+    border-top: 2px dashed #efefef;
+}
+
+.onp-sl-great-attractor .onp-sl-dark-force .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:after,
+.onp-sl-great-attractor .onp-sl-dark-force .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:before {
+    border-top-color: #1d3446;
+}
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:after {
+    left: -175px;
+}
+
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:after,
+.onp-sl-great-attractor .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 160px;
+    margin-top: -1px;
+    border-top: 2px dashed #efefef;
+}
+
+.onp-sl-great-attractor .onp-sl-dark-force .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:after,
+.onp-sl-great-attractor .onp-sl-dark-force .onp-sl-last-group .onp-sl-line-separator .onp-sl-title:before {
+    border-top-color: #1d3446;
+}
+
+/** ---
+* Connect Buttons
+*/
+
+/* :: Buttons :: */
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-control {
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 0px;
+    border: 0px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.03);
+    color: #111;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-control:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
+    background-color: transparent;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-control:hover .onp-sl-short {
+    display: inline;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-control:hover .onp-sl-long {
+    display: none;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-state-loading,
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-state-error {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #f2f2f2;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-state-loading:hover,
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-state-error:hover {
+    box-shadow: none;
+}
+
+/* :: Buttons, Icon :: */
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-icon {
+    height: 50px;
+    width: 5px;
+    background-image: url("../img/social-icons.png");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-control:hover .onp-sl-icon {
+    width: 40px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-facebook .onp-sl-icon {
+    background-position: 15px 15px;
+    background-color: #989de1;
+    border: 1px solid #7e85e1;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-twitter .onp-sl-icon {
+    background-position: -133px 16px;
+    background-color: #55acee;
+    border: 1px solid #2b9aee;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-google .onp-sl-icon {
+    background-position: -18px 16px;
+    background-color: #f47665;
+    border: 1px solid #f45944;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-linkedin .onp-sl-icon {
+    background-position: -60px 15px;
+    background-color: #0077b5;
+    border: 1px solid #036a9e;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-vk .onp-sl-icon {
+    background-position: -172px 16px;
+    background-color: #6287AE;
+    border: 1px solid #036a9e;
+}
+
+/* :: Buttons, Text :: */
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-connect-button {
+    text-align: left;
+    padding-left: 15px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 13px;
+    line-height: 50px;
+    font-weight: normal;
+    background: #f0f0f0;
+    border: 1px solid #c9c9c9;
+    border-left: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    white-space: nowrap;
+    background: -moz-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f6f6f6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fdfdfd 0%, #f6f6f6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f6f6f6', GradientType=0); /* IE6-9 */
+    -webkit-transition: left .3s;
+    transition: left .3s;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons .onp-sl-control:hover .onp-sl-connect-button {
+    left: 40px;
+    background: #f9f9f9;
+}
+
+/* :: As First Group :: */
+
+.onp-sl-great-attractor.onp-sl-subscription-enabled .onp-sl-connect-buttons.onp-sl-first-group {
+    padding-bottom: 0px;
+}
+
+/* :: As Last Group :: */
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group {
+    padding-top: 0px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-control {
+    width: 140px;
+    height: 40px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-icon {
+    height: 40px;
+    width: 5px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-facebook .onp-sl-icon {
+    background-position: 15px 10px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-twitter .onp-sl-icon {
+    background-position: -133px 10px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-google .onp-sl-icon {
+    background-position: -18px 11px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon {
+    background-position: -60px 10px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-vk .onp-sl-icon {
+    background-position: -172px 10px;
+}
+
+.onp-sl-great-attractor .onp-sl-connect-buttons.onp-sl-last-group .onp-sl-connect-button {
+    line-height: 40px;
+}
+
+/** ---
+* Subscription
+*/
+
+/* :: Buttons :: */
+
+.onp-sl-great-attractor .onp-sl-subscription .onp-sl-button {
+    width: 100%;
+}
+
+/* :: As Last Group :: */
+
+.onp-sl-great-attractor .onp-sl-subscription.onp-sl-last-group.onp-sl-separator-hides {
+    padding: 10px 0 30px 0;
+}
+
+/** ---
+* SCREEN: Email Confirmation
+*/
+
+.onp-sl-great-attractor .onp-sl-open .onp-sl-icon {
+    margin-top: -11px;
+}

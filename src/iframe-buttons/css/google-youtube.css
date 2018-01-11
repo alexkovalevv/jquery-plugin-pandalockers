@@ -1,0 +1,104 @@
+
+#btn-contanier,
+#btn-contanier .counter,
+#btn .icon,
+#btn > span {
+    display: inline-block;
+}
+
+#btn-contanier {
+    position: relative;
+    white-space: nowrap;
+}
+
+#btn {
+    display: none;
+    padding: 3px 8px 3px 5.5px;
+    background-color: #e62117;
+    border: solid 1px transparent;
+    outline: 0;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    color: #fefefe;
+    text-shadow: none;
+
+}
+
+#btn.loaded {
+    display: inline-block;
+}
+
+#btn:hover {
+    background-color: #cc181e;
+}
+
+#btn .icon {
+    vertical-align: middle;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl-z2H_Y.webp) -70px -468px;
+    background-size: auto;
+    width: 16px;
+    height: 12px;
+}
+
+#btn > span {
+    font-family: "Arial", "san-serif";
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+#btn .icon:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#btn-contanier .counter {
+    padding: 5px 6px 4px;
+    line-height: normal;
+    color: #737373;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: -4px;
+    background-color: #fafafa;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+#btn-contanier.vertical {
+    position: relative;
+    width: 85px;
+    padding-top: 30px;
+}
+
+#btn-contanier.vertical #btn {
+    border-radius: 0 0 4px 2px;
+}
+
+#btn-contanier.vertical #btn.loaded {
+    display: block;
+}
+
+#btn-contanier.vertical .counter {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-radius: 2px 2px 0 0;
+}

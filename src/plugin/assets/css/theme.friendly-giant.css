@@ -1,0 +1,538 @@
+/**
+ * Friendly Giant
+ * Copyright 2014, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['premium', 'full-premium']
+ */
+
+/** ---
+* Container 
+*/
+
+.onp-sl-friendly-giant {
+    background-color: #f1f1f1;
+    -moz-box-shadow: 0 0 100px 0px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 100px 0px rgba(0, 0, 0, 0.04);
+
+    padding: 6px;
+    margin: 60px auto;
+    border-radius: 7px;
+}
+
+.onp-sl-friendly-giant .onp-sl-outer-wrap {
+    background-color: #f6f6f6;
+    border-radius: 7px;
+}
+
+.onp-sl-friendly-giant .onp-sl-group-notice {
+    position: relative;
+    z-index: 1;
+}
+
+/* :: Fields :: */
+
+.onp-sl-friendly-giant .onp-sl-icon-append,
+.onp-sl-friendly-giant .onp-sl-icon-prepend {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    line-height: 34px;
+    top: 6px;
+}
+
+/* :: First Group :: */
+
+.onp-sl-friendly-giant .onp-sl-first-group {
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.onp-sl-friendly-giant .onp-sl-first-group.onp-sl-not-single-group {
+    padding-bottom: 40px; /* +15px */
+}
+
+/* :: Last Group :: */
+
+.onp-sl-friendly-giant .onp-sl-last-group {
+    padding-top: 50px; /* +15px */
+}
+
+.onp-sl-friendly-giant.onp-sl-has-terms .onp-sl-last-group {
+    padding-bottom: 0px;
+}
+
+/* :: Screens :: */
+
+.onp-sl-friendly-giant .onp-sl-non-default-screen {
+    background-color: #fff;
+}
+
+/** ---
+* Text & Formating
+*/
+
+/* :: Fonts :: */
+
+.onp-sl-friendly-giant,
+.onp-sl-friendly-giant input,
+.onp-sl-friendly-giant button,
+.onp-sl-friendly-giant p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 170%;
+    color: #777;
+}
+
+.onp-sl-friendly-giant .onp-sl-header,
+.onp-sl-friendly-giant .onp-sl-text .onp-sl-strong {
+    font-size: 26px;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+/* :: Formating :: */
+
+.onp-sl p + p {
+    margin-top: 10px !important;
+}
+
+/* :: Lock Icons :: */
+
+.onp-sl-friendly-giant .onp-sl-first-group .onp-sl-strong:before,
+.onp-sl-friendly-giant .onp-sl-first-group .onp-sl-strong:after {
+    display: none;
+}
+
+/** ---
+* Separators 
+*/
+
+.onp-sl-friendly-giant .onp-sl-hiding-link-separator .onp-sl-title {
+    font-size: 14px;
+}
+
+.onp-sl-friendly-giant .onp-sl-last-group .onp-sl-line-separator .onp-sl-title {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 0px;
+    line-height: 93px;
+    top: -100px;
+    font-weight: bold;
+    color: #dfdfdf;
+    z-index: 0;
+    position: relative;
+}
+
+.onp-sl-friendly-giant .onp-sl-last-group .onp-sl-line-separator {
+    margin: 0px;
+    border: 0px;
+    height: 0px;
+}
+
+/**
+* Overlap Modes
+*/
+
+.onp-sl-demo .onp-sl-friendly-giant,
+.onp-sl-overlap-box .onp-sl-friendly-giant {
+    -moz-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.22);
+}
+
+/**
+* Buttons
+*/
+
+.onp-sl-friendly-giant .onp-sl-button {
+    height: 55px;
+    line-height: 55px;
+
+    border-radius: 7px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.07);
+
+    color: #aaa;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.onp-sl-friendly-giant .onp-sl-button-primary:hover {
+    color: #846b0f;
+    background: #ffdb4d;
+    box-shadow: 0 0 12px 7px rgba(255, 204, 0, 0.25);
+}
+
+.onp-sl-friendly-giant .onp-sl-button-primary,
+.onp-sl-friendly-giant .onp-sl-button-primary:disabled {
+    background-color: #ffe16c;
+    color: #9c7e12;
+    box-shadow: none;
+}
+
+.onp-sl-friendly-giant .onp-sl-button.load:before {
+    background: url("../img/button_loader-ffe16c.gif");
+    height: 30px;
+    width: 30px;
+    margin: -14px 0 0 -15px;
+}
+
+.onp-sl-friendly-giant .onp-sl-form-button {
+    line-height: 100%;
+    padding: 17px 20px 15px 20px;
+    height: auto;
+}
+
+.onp-sl-friendly-giant .onp-sl-form-button-sm {
+    padding: 10px 18px;
+}
+
+.onp-sl-friendly-giant .onp-sl-button-sm {
+    border-bottom-width: 4px;
+    font-size: 14px;
+}
+
+/**
+* Inputs
+*/
+
+.onp-sl-friendly-giant .onp-sl-input {
+    height: 45px;
+
+    border-radius: 7px;
+    border-color: #c3c4c5;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding-left: 12px;
+
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.onp-sl-friendly-giant .onp-sl-input:focus {
+    border-color: #edcb47;
+    background-color: #fffcee;
+    box-shadow: inset 0 1px 1px rgba(255, 204, 0, 0.2);
+}
+
+/* :: Inputs & Buttons :: -> Forms */
+
+.onp-sl-friendly-giant .onp-sl-field {
+    margin-bottom: 12px;
+}
+
+.onp-sl-friendly-giant .onp-sl-field-label {
+    margin-bottom: 3px;
+}
+
+/* :: Inputs & Buttons :: -> Icons */
+
+.onp-sl-friendly-giant .onp-sl-icon-prepend + input,
+.onp-sl-friendly-giant .onp-sl-icon-prepend + textarea {
+    padding-left: 53px;
+}
+
+/* :: Inputs & Buttons :: -> Forms -> Checkbox */
+
+.onp-sl-friendly-giant .onp-sl-field-checkbox {
+    margin-bottom: 6px;
+}
+
+.onp-sl-friendly-giant .onp-sl-group .onp-sl-field-checkbox:last-child {
+    margin-bottom: 12px;
+}
+
+/* :: Inputs & Buttons :: -> Forms -> Dropdown :: */
+
+.onp-sl-friendly-giant .onp-sl-dropdown + i {
+    top: 19px;
+    right: 18px;
+}
+
+/* :: Inputs & Buttons :: -> Validation */
+
+.onp-sl-friendly-giant .onp-sl-field.onp-sl-error-state .onp-sl-input:focus {
+    border-color: #c26464;
+}
+
+.onp-sl-friendly-giant .onp-sl-field .onp-sl-validation-error {
+    margin-top: 8px;
+    line-height: 120%;
+}
+
+/**
+* Terms
+*/
+
+.onp-sl-friendly-giant .onp-sl-terms {
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+.onp-sl-friendly-giant .onp-sl-terms-inner-wrap {
+    padding: 5px 0 10px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.onp-sl-friendly-giant .onp-sl-terms-inner-wrap a {
+    color: #aaa;
+}
+
+.onp-sl-friendly-giant.onp-sl-contains-single-group .onp-sl-terms-inner-wrap {
+    padding: 9px 0 5px 0;
+}
+
+/**
+*  Timer & Cross
+*/
+
+.onp-sl-friendly-giant .onp-sl-cross {
+    top: 9px;
+    right: 9px;
+    opacity: 0.05;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=5);
+}
+
+.onp-sl-friendly-giant:hover .onp-sl-cross {
+    opacity: 0.13;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=13);
+}
+
+.onp-sl-friendly-giant .onp-sl-cross:hover {
+    opacity: 0.6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+.onp-sl-friendly-giant .onp-sl-timer {
+    bottom: 8px;
+    right: 9px;
+}
+
+/** ---
+* Connect Buttons
+*/
+
+/* :: Common :: */
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-text {
+    margin-bottom: 7px;
+}
+
+/* :: Buttons :: */
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-icon {
+    display: none;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button:hover {
+    color: #fff;
+    text-shadow: none;
+
+    border-bottom: 5px solid rgba(0, 0, 0, 0.12);
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button {
+    background-color: #e8e8e8;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.04);
+    font-size: 14px;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-facebook:hover {
+    background-color: #4769a5;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.17);
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-twitter:hover {
+    background-color: #65ccef;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-google:hover {
+    background-color: #e74c3c;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-linkedin:hover {
+    background-color: #0f7cb2;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.17);
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-vk:hover {
+    background-color: #567CA4;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-state-loading,
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-state-error {
+    background-color: #e8e8e8 !important;
+    border-bottom: 0px !important;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-button.onp-sl-state-loading {
+    border-bottom: 0px;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons .onp-sl-state-loading .onp-sl-control-inner-wrap {
+    background-image: url("../img/button-loader-e8e8e8.gif");
+}
+
+/* :: As Single :: */
+
+/* - empty - */
+
+/* :: As First Group :: */
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-control {
+    background-color: #f5f5f5;
+    padding: 0px;
+    width: 170px;
+    color: #777;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-button {
+
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-control:hover {
+    color: #fff;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.12);
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-connect-button {
+    border-radius: 5px;
+    border-left: 5px solid #999;
+    -webkit-transition: border 0.2s linear 0s;
+    -moz-transition: border 0.2s linear 0s;
+    -o-transition: border 0.2s linear 0s;
+    transition: border 0.2s linear 0s;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-control:hover .onp-sl-connect-button {
+    border-left: 5px solid transparent;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-facebook .onp-sl-connect-button {
+    border-left: 5px solid #4769a5;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-twitter .onp-sl-connect-button {
+    border-left: 5px solid #65ccef;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-google .onp-sl-connect-button {
+    border-left: 5px solid #e74c3c;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-vk .onp-sl-connect-button {
+    border-left: 5px solid #567CA4;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-button.onp-sl-state-loading,
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-button.onp-sl-state-error {
+    background-color: #f5f5f5;
+    border-bottom: 0px;
+}
+
+.onp-sl-friendly-giant .onp-sl-connect-buttons.onp-sl-first-group .onp-sl-state-loading .onp-sl-control-inner-wrap {
+    background-image: url("../img/button-loader-f2f2f2.gif");
+}
+
+/* :: As Last Group :: */
+
+/* - empty - */
+
+/** ---
+* Subscription
+*/
+
+.onp-sl-friendly-giant .onp-sl-subscription .onp-sl-button:hover {
+    color: #846b0f;
+    background-color: #ffdb4d;
+    box-shadow: 0 0 12px 7px rgba(255, 204, 0, 0.25);
+}
+
+.onp-sl-friendly-giant .onp-sl-subscription .onp-sl-button,
+.onp-sl-friendly-giant .onp-sl-subscription .onp-sl-button:disabled {
+    background-color: #ffe16c;
+    color: #9c7e12;
+    box-shadow: none;
+}
+
+.onp-sl-friendly-giant.onp-sl-custom-form .onp-sl-subscription .onp-sl-field-submit {
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* :: As Last Group :: */
+
+.onp-sl-friendly-giant .onp-sl-subscription.onp-sl-last-group {
+    background-color: #fff;
+}
+
+.onp-sl-friendly-giant .onp-sl-subscription.onp-sl-last-group + .onp-sl-terms .onp-sl-terms-inner-wrap {
+    padding: 9px 0 5px 0;
+}
+
+.onp-sl-friendly-giant .onp-sl-subscription.onp-sl-last-group.onp-sl-separator-hides .onp-sl-group-separator {
+    position: relative;
+    top: -35px;
+}
+
+.onp-sl-friendly-giant .onp-sl-subscription.onp-sl-last-group.onp-sl-separator-shows {
+    margin-top: 0px;
+    padding: 30px 25px;
+    border-top: 0px;
+    background-color: transparent;
+    border-top: 1px solid #f1f1f1;
+}
+
+.onp-sl-friendly-giant .onp-sl-subscription.onp-sl-last-group.onp-sl-separator-shows + .onp-sl-terms {
+    border-top: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+
+/* :: As Screen :: */
+
+/* - empty - */
+
+/** ---
+* SCREEN: Email Confirmation
+*/
+
+.onp-sl-friendly-giant .onp-sl-screen-email-confirmation .onp-sl-line-2 {
+    margin-top: 15px;
+}
+
+.onp-sl-friendly-giant .onp-sl-screen-email-confirmation .onp-sl-open-button-wrap {
+    padding-top: 35px;
+    padding-bottom: 3px;
+}
+
+.onp-sl-friendly-giant .onp-sl-screen-email-confirmation .onp-sl-open.onp-sl-has-icon {
+    padding-left: 50px;
+}
+
+.onp-sl-friendly-giant .onp-sl-screen-email-confirmation .onp-sl-open .onp-sl-icon {
+    left: 15px;
+}

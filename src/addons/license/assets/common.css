@@ -1,0 +1,58 @@
+/**
+ * Общие стили для миграции
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 01.06.2017
+ *
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['premium', 'free']
+ */
+.onp-sl {
+  /* --------------------------------
+  /* Ссылка на автора
+  /* -------------------------------*/
+}
+.onp-sl .onp-sl-inner-wrap.onp-sl-wrap-elevated {
+  padding-bottom: 28px;
+}
+.onp-sl .onp-sl-credential-link {
+  position: absolute !important;
+  width: 300px;
+  text-align: center;
+  text-decoration: none !important;
+  font: lighter 12px arial, tahoma, sans-serif !important;
+  bottom: 5px;
+  right: 50% !important;
+  margin-right: -150px;
+  line-height: 2.5 !important;
+  border: 0;
+  border-top: 1px solid #dddddd !important;
+  color: #A7A7A7 !important;
+}
+.onp-sl .onp-sl-credential-link:hover {
+  text-decoration: underline !important;
+  color: #9E9E9E !important;
+}
+.onp-sl.onp-sl-dark-force .onp-sl-credential-link {
+  border-top: 1px solid #384D5A !important;
+  color: #4A687E !important;
+}
+.onp-sl.onp-sl-dark-force .onp-sl-credential-link:hover {
+  color: #e3f1ff !important;
+}
+.onp-sl .onp-sl-friendly-giant .onp-sl-wrap-elevated {
+  padding-bottom: 30px;
+}
+.onp-sl .onp-sl-friendly-giant .onp-sl-credential-link {
+  border-top: 0 !important;
+}
+.onp-sl.onp-sl-dandyish .onp-sl-wrap-elevated {
+  padding-bottom: 50px;
+}
+.onp-sl.onp-sl-dandyish .onp-sl-credential-link {
+  bottom: 18px;
+}

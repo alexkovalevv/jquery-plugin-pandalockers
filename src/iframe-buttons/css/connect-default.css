@@ -1,0 +1,49 @@
+body {
+    font: normal normal 400 13px/170% Arial, Helvetica, sans-serif;
+}
+
+#btn,
+#btn .icon,
+#btn .connect-button {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#btn {
+    display: block;
+    opacity: 0;
+    background-color: #f1f1f1;
+    padding: 0 5px;
+    margin: 7px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+#btn.loaded {
+    opacity: 1;
+}
+
+#btn:hover {
+    background-color: #e5e5e5;
+}
+
+#btn .counter {
+    display: none;
+}
+
+.short-text {
+    display: none;
+}
+
+#btn .icon svg {
+    display: none;
+}
+
+#fb-btn-wrap, #tw-btn-wrap, #g-btn-wrap, #ln-btn-wrap, #vk-btn-wrap {
+    display: inline-block !important;
+}

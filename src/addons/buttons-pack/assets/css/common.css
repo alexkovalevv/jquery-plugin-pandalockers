@@ -1,0 +1,74 @@
+/**
+ * Общие стили кнопок
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 01.06.2017
+ *
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['free','premium']
+ */
+/* vk like button */
+.onp-sl-vk-like .onp-sl-control-inner-wrap {
+  max-width: 150px;
+}
+.onp-sl-social-button-vk-like,
+.onp-sl-social-button-google-share {
+  overflow: visible !important;
+}
+.onp-sl-vk-like iframe {
+  position: relative !important;
+}
+.onp-sl-vk-like iframe,
+.onp-sl-google-share iframe {
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 99 !important;
+  max-width: none !important;
+}
+/* vk share button */
+.onp-sl-vk-share .onp-sl-control-inner-wrap {
+  max-width: 185px;
+}
+/* vk subscribe button */
+.onp-sl-vk .onp-sl-control-inner-wrap {
+  max-width: 210px;
+}
+.onp-sl-vk-subscribe-button {
+  position: relative;
+  width: 92px;
+  height: 20px;
+  overflow: hidden;
+}
+/* mail share button */
+.onp-sl-social-buttons .onp-sl-social-button-mail-share iframe {
+  width: 120px !important;
+}
+.onp-sl-dandyish .onp-sl-social-button-mail-share iframe {
+  width: 76px !important;
+}
+.onp-sl-social-buttons.onp-sl-no-counters .onp-sl-social-button-mail-share > span {
+  position: static !important;
+}
+.onp-sl-social-buttons.onp-sl-no-counters .onp-sl-social-button-mail-share iframe {
+  width: 80px !important;
+}
+iframe[src*="connect.mail.ru/share_comment"] {
+  display: none !important;
+}
+/* ok klass button */
+.onp-ok-klass-button.counter-off {
+  text-align: center;
+}
+.onp-ok-klass-button.counter-off > div {
+  display: inline-block;
+}
+.onp-ok-button-inner {
+  width: 85px;
+  overflow: hidden;
+}
+/*.onp-sl-flat .onp-social-button {
+  min-width: 130px;
+}*/

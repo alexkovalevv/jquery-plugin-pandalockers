@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example</title>
+    <script>!function(a, b, c) {
+        void 0 == b[c] && (b[c] = {}), b[c]["434"] = {
+            build: "premium",
+            userId: "c86cd114e1a7896cc12e3021b4ff5918"
+        };
+        var d = a.getElementsByTagName("script")[0], e = a.createElement("script"), f = function() {
+            d.parentNode.insertBefore(e, d)
+        };
+        e.type = "text/javascript", e.async = !1, e.src = "libs/autoload.1.1.1.js", "[object Opera]" == b.opera
+                ? a.addEventListener("DOMContentLoaded", f, !1)
+                : f()
+    }(document, window, "_onpwgt");</script>
+    <script>
+        /**
+         * Функция сработает после того, как все библиотеки социального замка будут загружены,
+         * но сам плагин еще не инициализирован.
+         */
+        window.__onpWgtAsynCallback = function() {
+
+            __$onp.pandalocker.hooks.add('opanda-get-storage-identity', function(identity) {
+                var productId = '00000123';
+                return identity + '_product_' + productId;
+            });
+
+            /*__$onp.pandalocker.hooks.add('opanda-init', function(e, locker) {
+             console.log(locker);
+             });*/
+
+            //__$onp.pandalocker.hooks.add('opanda-filter-options', function(options, locker) {console.log('dsd')});
+            // Отключаем некоторы настройки для аддонов, чтобы протестировать приложение
+            /*__$onp.pandalocker.hooks.add('opanda-filter-options', function(options, locker) {
+             // Для отладки Iframe кнопок
+             options.debug = true;
+             options.lang = 'en_US';
+             options.buttons.order = options.socialButtons.order = ['facebook-like'];
+             options.socialButtons.vk = {};
+             options.socialButtons.vk.subscribe = {
+             groupId: '35637531'
+             };
+             options.debugOptions = {
+             onpSdkUrl: 'http://cdn.sociallocker.dev/ifbcreator.js'
+             };
+             return options;
+             }, 20);*/
+        };
+    </script>
+    <style>
+        .onp-sl-step-to-step-message {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background: #ffe8c6;
+        }
+
+        .onp-sl-step-to-step-message:before {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            margin-left: -7.5px;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #ffe8c6;
+        }
+    </style>
+    <script>
+        /**
+         * Функция сработает после того, как все библиотеки социального замка будут загружены,
+         * но сам плагин еще не инициализирован.
+         */
+        window.__onpWgtAsynCallback = function() {
+            var enLangPackage = __$onp.pandalocker.lang;
+
+            __$onp.pandalocker.hooks.add('opanda-init', function(e, locker) {
+                //console.log(locker);
+                //__$onp.pandalocker.lang = enLangPackage;
+
+            });
+
+            __$onp.pandalocker.hooks.add('opanda-get-storage-identity', function(identity, locker) {
+                var productId = '00000123',
+                        newIdentity = identity + '_product_' + productId;
+                return newIdentity;
+            });
+
+            setInterval(function() {
+                // locked, unlocked
+                var state = __$onp('.to-lock-434').pandalocker('getState');
+                console.log(state);
+            }, 5000);
+            /*var isLocked = locker.getState();
+             console.log(locker);*/
+
+        };
+
+        //window.__onpWgtAsynCallback = function() {
+
+        /*__$onp.pandalocker.hooks.add('opanda-init', function(e, locker) {
+         locker.stepToStep = 0;
+         locker._oldUnlock = locker._unlock;
+
+         if( __$onp.pandalocker.tools.getFromStorage('onp_sl_step_to_step_' + locker.id) ) {
+         locker._lock = function() {
+         return false;
+         }
+         }
+
+         locker._unlock = function(sender, sernderName, value) {
+         if( sender == 'button' ) {
+         if( sernderName == 'vk-subscribe' || sernderName == 'vk-share' ) {
+         locker.runHook('unlock', [sender, sernderName, value]);
+         return;
+         }
+         }
+         locker._oldUnlock(sender, sernderName, value);
+         };
+         });*/
+
+        // Отключаем некоторы настройки для аддонов, чтобы протестировать приложение
+        // __$onp.pandalocker.hooks.add('opanda-filter-options', function(options, locker) {
+        // Для отладки Iframe кнопок
+        //options.demo = true;
+        //options.buttons.order = options.socialButtons.order = ['vk-share', 'vk-subscribe', 'google-share'];
+        /*options.socialButtons.vk = {};
+         options.socialButtons.vk.subscribe = {
+         groupId: 'sociallocker'
+         };*/
+        //return options;
+        //}, 20);
+
+        /*__$onp.pandalocker.hooks.add('opanda-unlock', function(e, locker, button, buttonName) {
+         if( button == 'button' ) {
+         if( buttonName == 'vk-subscribe' || buttonName == 'vk-share' ) {
+         if( locker.stepToStep > 0 ) {
+         locker._oldUnlock('step-to-step');
+         var expires = 30;
+         if( locker.options.locker.expires ) {
+         expires = Math.floor(locker.options.locker.expires / 86400);
+         }
+         __$onp.pandalocker.tools.setStorage('onp_sl_step_to_step_' + locker.id, 1, expires);
+         }
+         __$onp(locker.locker).find('.onp-sl-' + buttonName).hide();
+         __$onp(locker.locker).find('.onp-sl-screen-default').append('<div class="onp-sl-step-to-step-message">Вам остался один шаг, чтобы открыть замок!</div>');
+         locker._showScreen('default');
+         locker.stepToStep++;
+         }
+         }
+         });*/
+
+        /*var enLangPackage = __$onp.pandalocker.lang;
+         __$onp.pandalocker.hooks.add('opanda-init', function(e, locker) {
+         __$onp.pandalocker.lang = enLangPackage;
+         });*/
+        //};
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <!-- Place this tag where you want the share button to render.
+    <div class="g-plus" data-action="share" data-onendinteraction="shareState" data-href="https://sociallocker.ru"></div>-->
+    <div class="to-lock-429">Ваш скрытый контент.</div>
+    <div class="to-lock-434">Ваш скрытый контент.</div>
+    <div style="max-width: 800px; margin: 20px auto;">
+        <div class="to-lock0">
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+
+            <p><strong>Lorem ipsum — название классического текста-«рыбы».</strong></p>
+
+            <p>
+                «Рыба» — слово из жаргона дизайнеров, обозначает условный, зачастую бессмысленный текст, вставляемый
+                в
+                макет страницы.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+

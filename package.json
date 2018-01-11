@@ -1,0 +1,88 @@
+{
+  "plugin": {
+    "dir": "src/plugin",
+    "distDir": "dist/plugin",
+    "addonsDir": "src/addons",
+    "distAddonDir": "dist/addons"
+  },
+  "addons": {
+    "copyright": "Copyright 2017, Alex Kovalev <alex.kovalevv@gmail.com>",
+    "companyCopyright": "Webcraftic (c) 2017",
+    "localization_pack": {
+      "title": "Bizpanda localization",
+      "description": "The language pack for the plugin.",
+      "version": "1.0.0"
+    },
+    "paylocker": {
+      "title": "Paylocker addon",
+      "description": "The add-on is built on the social lock platform, it performs blocking of paid content. It is possible to generate tariff tables, step-by-step registration and payment.",
+      "version": "1.0.5"
+    },
+    "popup_mode": {
+      "title": "Popup mode addon",
+      "description": "This modification allows the use of conventional locks in the pop-up window mode.",
+      "version": "1.0.4"
+    },
+    "migration_rus_to_en": {
+      "title": "Social Locker Migration",
+      "description": "This modification extends the functionality of the old plug-in, adds new tools, the capabilities transferred from the russian version.",
+      "version": "1.0.2"
+    },
+    "step_to_step": {
+      "title": "Step to step addon",
+      "description": "This modification allows you to create step-by-step tasks.",
+      "version": "1.0.3"
+    },
+    "buttons_pack": {
+      "title": "Social Locker buttons pack",
+      "description": "This modification extends the package of social buttons.",
+      "version": "1.0.2"
+    },
+    "license": {
+      "title": "Social Locker license",
+      "description": "This modification licenses the plugin.",
+      "version": "1.0.0"
+    }
+  },
+  "name": "pandalocker",
+  "title": "BizPanda Lockers",
+  "copyright": "Copyright 2017, OnePress <support@byonepress.com>",
+  "version": "2.2.6",
+  "site": "Learn more: http://byonepress.com, https://sociallocker.org \n * In Russian: https://sociallocker.ru",
+  "proxy": "http://sociallocker-service.dev/api/connect",
+  "getClientProxy": "http://sociallocker-service.dev/api/client",
+  "btnsStorage": "//cdn.sociallocker.ru/service/buttons/",
+  "facebook": {
+    "appId": 1681260055442448
+  },
+  "vk": {
+    "appId": 5337425,
+    "appSecret": "Mb69K5lzeDBBuss0W9je",
+    "accessToken": "eb29aae9f8a9d1b857dbf566aef1ed56eda31dd1b1933b65cd9f23b247778ac4b8b1292ff0ee6f86218c59087b48f",
+    "groupId": 57232427
+  },
+  "google": {
+    "client_id": "788541852920-tb8unl80leqd35007tl8l1l1qsfqrmbs.apps.googleusercontent.com"
+  },
+  "linkedin": {
+    "client_id": "7774jogqfi9na8",
+    "client_secret": "jWq5ZjG7g3gYqwbn"
+  },
+  "youtube": {
+    "channel_id": "UCxcDF0b_UkQ6VxcfagUui1w"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-obfuscator": "^2.0.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-insert": "^0.1.0",
+    "grunt-preprocess": "^4.0.0"
+  }
+}

@@ -1,0 +1,193 @@
+.setIconBgColor(@buttonName, @bgColor) {
+  .onp-sl-@{buttonName} .onp-sl-icon {
+    background-color: @bgColor;
+  }
+}
+
+.setIconBgColor(@buttonName, @bgColor) {
+  .onp-sl-@{buttonName} .onp-sl-icon {
+    background-color: @bgColor;
+  }
+}
+
+.setButtonBgColor(@buttonName, @bgColor) {
+  .onp-sl-@{buttonName} {
+    background-color: @bgColor;
+  }
+  .onp-sl-@{buttonName}:hover {
+    background-color: lighten(@bgColor, 5%);
+  }
+}
+
+.connect-dark-forse-buttons() {
+  .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force {
+    .onp-sl-button {
+      line-height: 3.3;
+      border: 0px;
+      background-color: rgba(23, 23, 23, 0.2);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .12), inset 0 1px 0 rgba(0, 0, 0, .2);
+      color: #59d2ff;
+      text-shadow: none;
+      &:hover {
+        color: #019cd5;
+        background-color: rgba(3, 31, 52, 0.42);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .16), inset 0 1px 0 rgba(0, 0, 0, .22);
+      }
+
+      &.onp-sl-state-loading,
+      &.onp-sl-state-error {
+        border: 0px !important;
+        background-color: rgba(23, 23, 23, 0.2) !important;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .12), inset 0 1px 0 rgba(0, 0, 0, .2) !important;
+        color: #59d2ff !important;
+      }
+    }
+
+    .onp-sl-state-loading .onp-sl-control-inner-wrap {
+      background-image: url("../img/button-loader-232323.gif");
+      background-repeat: no-repeat;
+    }
+
+    .onp-sl-short {
+      display: block;
+    }
+
+    .onp-sl-long {
+      display: none;
+    }
+
+    .onp-sl-connect-button {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .onp-sl-icon {
+      width: 32px;
+      height: 32px;
+      top: 9px;
+      left: 9px;
+      background-image: url("../img/social-icons.png");
+      background-position-y: 50%;
+
+      background-color: #172c3a;
+      position: absolute;
+
+      border-radius: 3px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16);
+      background-repeat: no-repeat;
+    }
+
+    /**
+      Big style
+    */
+    &.onp-sl-buttons-size-big {
+      .onp-sl-button {
+        width: 170px;
+        height: 50px;
+      }
+
+      .onp-sl-connect-button {
+        left: 41px;
+      }
+
+      .setIconBgPosition(facebook, 11px, 7px, 32px, 32px);
+      .setIconBgPosition(twitter, -138px, 7px, 32px, 32px);
+      .setIconBgPosition(google, -24px, 8px, 32px, 32px);
+      .setIconBgPosition(linkedin, -64px, 7px, 32px, 32px);
+      .setIconBgPosition(vk, -177px, 8px, 32px, 32px);
+
+    }
+
+    /**
+      Mediums style
+    */
+    &.onp-sl-buttons-size-medium, &.onp-sl-buttons-size-small {
+
+      .onp-sl-button {
+        width: 135px;
+        height: 35px;
+        line-height: 2.4;
+      }
+      .onp-sl-icon {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        left: 6px;
+        background-image: url("../img/social-icons-x24.png");
+      }
+
+      .onp-sl-connect-button {
+        left: 41px;
+      }
+
+      .setIconBgPosition(facebook, -5px, -5px, 24px, 24px);
+      .setIconBgPosition(twitter, -107px, -5px, 24px, 24px);
+      .setIconBgPosition(google, -39px, -5px, 24px, 24px);
+      .setIconBgPosition(linkedin, -73px, -5px, 24px, 24px);
+      .setIconBgPosition(vk, -141px, -5px, 24px, 24px);
+    }
+
+    /**
+      Small style
+    */
+    &.onp-sl-buttons-size-small {
+      .onp-sl-button {
+        width: 37px;
+        height: 35px;
+        line-height: 2.4;
+        overflow: hidden;
+        margin: 3px;
+
+        .onp-sl-error-title {
+          font-size: 0px !important;
+          background: url(../img/close-white.png) 50% 50% no-repeat;
+        }
+      }
+
+    }
+
+    .setIconBgColor(facebook, #5987c2);
+    .setIconBgColor(twitter, #42c9f9);
+    .setIconBgColor(google, #dd4b39);
+    .setIconBgColor(linkedin, #0073b2);
+    .setIconBgColor(vk, #567CA4);
+
+    /* :: As First Group :: */
+
+    &.onp-sl-first-group {
+      .onp-sl-button {
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16);
+        text-align: left;
+
+        border-radius: 3px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        color: #fff;
+      }
+      .onp-sl-icon {
+        border-bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .12), inset 0 1px 0 rgba(0, 0, 0, .13);
+      }
+      .onp-sl-connect-button {
+        position: absolute;
+        left: 52px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+      }
+
+      .setButtonBgColor(facebook, #5987c2);
+      .setButtonBgColor(twitter, #42c9f9);
+      .setButtonBgColor(google, #dd4b39);
+      .setButtonBgColor(linkedin, #0073b2);
+      .setButtonBgColor(vk, #567CA4);
+    }
+  }
+}
+
+
+

@@ -1,0 +1,141 @@
+/**
+ * Download theme
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 28.04.2017
+
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['popup-mode']
+ */
+.onp-sl-overlap-box.onp-sl-download-theme.onp-sl-blurring-mode .onp-sl-overlap-background {
+  opacity: 0.6;
+}
+.onp-sl-overlap-box.onp-sl-download-theme .onp-sl-overlap-background {
+  background: rgba(2, 95, 107, 0.78) url('../img/lock-content-img.png') repeat;
+}
+.onp-sl.onp-sl-download {
+  background: #00BCD4;
+  box-shadow: inset 25px 25px 100px #00dcf4, inset -25px -25px 100px #00acc2;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  /*.onp-sl-group {
+    padding: 0;
+    //padding-bottom: 40px;
+  }*/
+}
+.onp-sl.onp-sl-download ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #9ce7f1;
+}
+.onp-sl.onp-sl-download ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9ce7f1;
+}
+.onp-sl.onp-sl-download :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #9ce7f1;
+}
+.onp-sl.onp-sl-download :-moz-placeholder {
+  /* Firefox 18- */
+  color: #9ce7f1;
+}
+.onp-sl.onp-sl-download .onp-sl-text {
+  padding: 10px 20px;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-shadow: none;
+}
+.onp-sl.onp-sl-download .onp-sl-text,
+.onp-sl.onp-sl-download .onp-sl-text p {
+  color: #504e4e;
+  font-size: 15px;
+}
+.onp-sl.onp-sl-download .onp-sl-text .onp-sl-strong {
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.onp-sl.onp-sl-download .onp-sl-timer {
+  color: #03444c;
+}
+.onp-sl.onp-sl-download .onp-sl-first-group .onp-sl-strong:before,
+.onp-sl.onp-sl-download .onp-sl-first-group .onp-sl-strong:after {
+  display: none;
+}
+.onp-sl.onp-sl-download .onp-sl-group-notice {
+  background-color: #15808e;
+  color: #d4d4d4 !important;
+}
+.onp-sl.onp-sl-download .onp-sl-error-title {
+  background-color: #b53737 !important;
+}
+.onp-sl.onp-sl-download .onp-sl-group-error,
+.onp-sl.onp-sl-download .onp-sl-locker-error {
+  background-color: rgba(181, 55, 55, 0.69) !important;
+}
+.onp-sl.onp-sl-download .onp-sl-screen {
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.onp-sl.onp-sl-download .onp-sl-screen.onp-sl-screen-data-processing .onp-sl-process-spin {
+  height: 150px;
+  background: url('../img/ring-loader-00bbd3.gif') center no-repeat;
+}
+.onp-sl.onp-sl-download .onp-sl-screen.onp-sl-screen-data-processing .onp-sl-processing-sreen-text {
+  color: #0e565f;
+}
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-back {
+  background: #b53737 !important;
+}
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control {
+  background: rgba(235, 238, 239, 0.31);
+  border-color: rgba(255, 255, 255, 0);
+}
+.onp-sl.onp-sl-download .onp-sl-connect-buttons .onp-sl-button {
+  /*background-color: rgba(255, 255, 255, 0.18);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.15) !important;
+
+      &.onp-sl-state-loading,
+      &.onp-sl-state-error {
+        background-color: rgba(255, 255, 255, 0.18) !important;
+      }*/
+}
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error {
+  background: rgba(0, 88, 102, 0.3);
+  box-shadow: none !important;
+  border: none;
+}
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error:hover {
+  box-shadow: none;
+  background: rgba(0, 88, 102, 0.3);
+}
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading .onp-sl-control-inner-wrap {
+  background-image: url("../img/button-loader-2ec8dc.gif") !important;
+}
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-icon {
+  background-color: #005968;
+  border-bottom: 1px solid #00414e;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-state-loading .onp-sl-control-inner-wrap {
+  background-image: url("../img/button-loader-2ec8dc.gif") !important;
+}
+.onp-sl.onp-sl-download .onp-sl-subscription .onp-sl-input {
+  background: #007c8c;
+  border: 1px solid #027686;
+  color: #9ce7f1;
+}
+.onp-sl.onp-sl-download .onp-sl-subscription .onp-sl-button {
+  background-color: #03505a;
+  color: #e0e0e0;
+}
+.onp-sl.onp-sl-download .onp-sl-subscription .onp-sl-button.load:before {
+  background: url('../img/button-loader-565656.gif');
+}
+.onp-sl.onp-sl-download .onp-sl-subscription .onp-sl-note {
+  color: #046773;
+}

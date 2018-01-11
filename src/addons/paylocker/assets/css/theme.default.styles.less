@@ -1,0 +1,190 @@
+/**
+ * Тема для тарифных таблиц
+ * @author Alex Kovalev <alex.kovalevv@gmail.com>
+ * @copyright Alex Kovalev 11.12.2016
+ *
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['paylocker']
+ */
+@import "theme.defaults.less";
+
+/* -------------------------------------------- */
+/*  ЦВЕТОВАЯ СХЕМА ТАБЛИЦЫ ПО УМОЛЧАНИЮ
+/* -------------------------------------------- */
+
+.onp-sl.onp-sl-default {
+  // Заголовок темы
+  @theme-header-bg-color: #3c2e4f;
+  @-header-text-color: #d6bef7;
+  @-header-subline-color: #271c38;
+  @-header-help-icon: data-uri('../img/information.png');
+
+  // Тело темы
+  @theme-body-bg-color: #75649b;
+  @-body-text-color: #fff;
+  @-body-links-color: #ffd5c7;
+
+  // Таблица покупки
+  @-buy-table-body-bg-color: #fff;
+  @-buy-table-header-bg-color: #ffc107;
+  @-buy-table-header-text-color: #7b6215;
+  @-buy-table-price-color: #e6be45;
+  @-buy-table-text-color: #222;
+  @-buy-table-button-bg-color: #fbcd42;
+
+  // Таблица подписки
+  @-subscribe-table-body-bg-color: #fff;
+  @-subscribe-table-header-bg-color: #d6bef7;
+  @-subscribe-table-header-text-color: #624c80;
+  @-subscribe-table-price-color: #9286a2;
+  @-subscribe-table-text-color: #222;
+  @-subscribe-table-button-bg-color: #5a4d6d;
+
+  // Форма оплаты
+  @-pform-table-bg-color: #8371ad;
+  @-pform-table-text-color: #f2edff;
+
+  // Низ темы
+  @theme-footer-bg-color: rgba(244, 67, 54, 0.23);
+  @-footer-links-color: #ffffff;
+
+  .theme-styles();
+  .table-styles();
+}
+
+/* -------------------------------------------- */
+/*  ЦВЕТОВАЯ СХЕМА ТАБЛИЦЫ LIGHT
+/* -------------------------------------------- */
+
+.onp-sl.onp-sl-default-light {
+
+  // Заголовок темы
+  @theme-header-bg-color: #fffce5;
+  @-header-text-color: #908b65;
+  @-header-subline-color: #eae7cf;
+  @-header-help-icon: data-uri('../img/information.png');
+
+  // Тело темы
+  @theme-body-bg-color: #ffffff;
+  @-body-text-color: #9a9494;
+  @-body-links-color: #333;
+
+  // Таблица покупки
+  @-buy-table-body-bg-color: #fff;
+  @-buy-table-header-bg-color: #ffece6;
+  @-buy-table-header-text-color: #e4baac;
+  @-buy-table-price-color: #dcbcb1;
+  @-buy-table-text-color: #9a9494;
+  @-buy-table-button-bg-color: darken(@-buy-table-body-bg-color, 10%);
+
+  // Таблица подписки
+  @-subscribe-table-body-bg-color: #fbfdeb;
+  @-subscribe-table-header-bg-color: #dfe4b6;
+  @-subscribe-table-header-text-color: #a1a773;
+  @-subscribe-table-price-color: #b1b590;
+  @-subscribe-table-text-color: #9a9494;
+  @-subscribe-table-button-bg-color: darken(@-subscribe-table-body-bg-color, 10%);
+
+  // Форма оплаты
+  @-pform-table-bg-color: #f9f9f9;
+  @-pform-table-text-color: #fff;
+
+  // Низ темы
+  @theme-footer-bg-color: #efefef;
+  @-footer-links-color: #848484;
+
+  .theme-styles();
+  .table-styles();
+}
+
+/* -------------------------------------------- */
+/*  ЦВЕТОВАЯ СХЕМА ТАБЛИЦЫ BLACK
+/* -------------------------------------------- */
+
+.onp-sl.onp-sl-default-black {
+  // Заголовок темы
+  @theme-header-bg-color: #3a3939;
+  @-header-text-color: #b7b7b7;
+  @-header-subline-color: #484848;
+  @-header-help-icon: data-uri('../img/information.png');
+
+  // Тело темы
+  @theme-body-bg-color: #656565;
+  @-body-text-color: #d6d6d6;
+  @-body-links-color: #adadad;
+
+  // Таблица покупки
+  @-buy-table-body-bg-color: #d2d2d2;
+  @-buy-table-header-bg-color: #c5c5c5;
+  @-buy-table-header-text-color: #3a3a3a;
+  @-buy-table-price-color: #676767;
+  @-buy-table-text-color: #656565;
+  @-buy-table-button-bg-color: darken(@-buy-table-body-bg-color, 10%);
+
+  // Таблица подписки
+  @-subscribe-table-body-bg-color: #484848;
+  @-subscribe-table-header-bg-color: #383838;
+  @-subscribe-table-header-text-color: #b9b9b9;
+  @-subscribe-table-price-color: #bdbdbd;
+  @-subscribe-table-text-color: #9a9494;
+  @-subscribe-table-button-bg-color: #585858;
+
+  // Форма оплаты
+  @-pform-table-bg-color: #585858;
+  @-pform-table-text-color: #cecece;
+
+  // Низ темы
+  @theme-footer-bg-color: rgba(82, 12, 7, 0.2);
+  @-footer-links-color: #ffffff;
+
+  .theme-styles();
+  .table-styles();
+}
+
+/* -------------------------------------------- */
+/*  ЦВЕТОВАЯ СХЕМА ТАБЛИЦЫ FOREST
+/* -------------------------------------------- */
+
+.onp-sl.onp-sl-default-forest {
+  // Заголовок темы
+  @theme-header-bg-color: #ced2b3;
+  @-header-text-color: #7e906b;
+  @-header-subline-color: #bbbf9f;
+  @-header-help-icon: data-uri('../img/information.png');
+
+  // Тело темы
+  @theme-body-bg-color: #e7ece2;
+  @-body-text-color: #949494;
+  @-body-links-color: #909473;
+
+  // Таблица покупки
+  @-buy-table-body-bg-color: #fff;
+  @-buy-table-header-bg-color: #efd382;
+  @-buy-table-header-text-color: #907423;
+  @-buy-table-price-color: #d8c385;
+  @-buy-table-text-color: #9a9494;
+  @-buy-table-button-bg-color: #f3e0ac;
+
+  // Таблица подписки
+  @-subscribe-table-body-bg-color: #fff;
+  @-subscribe-table-header-bg-color: #ced2b3;
+  @-subscribe-table-header-text-color: #7a8050;
+  @-subscribe-table-price-color: #ced2b3;
+  @-subscribe-table-text-color: #9a9494;
+  @-subscribe-table-button-bg-color: #f3f5e7;
+
+  // Форма оплаты
+  @-pform-table-bg-color: #dfe2ce;
+  @-pform-table-text-color: #75795c;
+
+  // Низ темы
+  @theme-footer-bg-color: #f3f5e7;
+  @-footer-links-color: #7b7b7b;
+
+  .theme-styles();
+  .table-styles();
+}
+

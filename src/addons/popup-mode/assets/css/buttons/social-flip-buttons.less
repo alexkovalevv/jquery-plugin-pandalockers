@@ -1,0 +1,210 @@
+.flip-buttons() {
+  .onp-sl-social-buttons {
+    .onp-sl-control {
+      background: rgba(0, 0, 0, 0.05);
+      border: 6px solid rgba(255, 255, 255, 0.09);
+      max-width: 200px;
+
+      .onp-social-button {
+        min-width: 130px;
+      }
+
+      .onp-sl-control-inner-wrap,
+      .onp-sl-button-overlay {
+        height: 34px;
+        min-width: 150px;
+        text-decoration: none;
+      }
+
+      .onp-sl-control-inner-wrap {
+        padding: 7px;
+        -moz-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+      }
+
+      .onp-sl-overlay-front {
+        box-shadow: inset 0 2px 0 rgba(255, 255, 255, .25);
+        -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .25);
+        -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .25);
+        position: relative;
+
+        background: rgb(247, 247, 247);
+      }
+
+      .onp-sl-overlay-icon {
+        height: 34px;
+        width: 44px;
+        background: url("../img/social-icons.png") -1000px 50% no-repeat;
+        position: absolute;
+      }
+
+      .onp-sl-overlay-line {
+        position: absolute;
+        left: 41px;
+        top: 7px;
+        height: 21px;
+        width: 0px;
+        border-left: 1px solid rgba(0, 0, 0, 0.11);
+        border-right: 1px solid rgba(255, 255, 255, 0.16);
+      }
+
+      .onp-sl-overlay-text {
+        font-size: 14px;
+        font-family: "Arial", "Helvetica", sans-serif;
+        line-height: 34px;
+        color: #fff;
+        text-align: center;
+        position: static;
+        padding-left: 42px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      .onp-sl-overlay-back {
+        background: #eaeaea;
+        border: 0;
+      }
+
+      .onp-sl-overlay-header {
+        background: #eaeaea;
+      }
+    }
+
+    .onp-sl-facebook-share-overlay,
+    .onp-sl-feature-overlay,
+    .onp-sl-youtube-subscribe-overlay {
+      opacity: 0 !important;
+      &:hover {
+        opacity: 0 !important;
+      }
+    }
+
+    .onp-sl-twitter {
+      .onp-sl-overlay-front {
+        background: rgb(0, 191, 238);
+      }
+      .onp-sl-overlay-icon {
+        background-position: -132px 8px;
+      }
+      .onp-sl-overlay-back {
+        background: #24b1e5;
+      }
+      .onp-sl-overlay-header {
+        background: #368acd;
+      }
+    }
+
+    .onp-sl-facebook-like, .onp-sl-facebook-share {
+      .onp-sl-overlay-front {
+        background: rgb(85, 129, 188);
+      }
+      .onp-sl-overlay-icon {
+        background-position: 15px 9px;
+      }
+      .onp-sl-overlay-back {
+        background: #46629e;
+      }
+      .onp-sl-overlay-header {
+        background-color: #314775;
+      }
+    }
+
+    .onp-sl-google-share, .onp-sl-google-plus {
+      .onp-sl-overlay-front {
+        background: #5c5c5c;
+      }
+      .onp-sl-overlay-icon {
+        background-position: -18px 9px;
+      }
+      .onp-sl-overlay-back {
+        background: #494647;
+      }
+      .onp-sl-overlay-header {
+        background-color: #111111;
+      }
+    }
+
+    .onp-sl-linkedin-share {
+      .onp-sl-overlay-front {
+        background: #0076a3;
+      }
+      .onp-sl-overlay-icon {
+        background-position: -58px 8px;
+      }
+      .onp-sl-overlay-back {
+        background: #286b8d;
+      }
+      .onp-sl-overlay-header {
+        background-color: #19465d;
+      }
+    }
+
+    .onp-sl-google-youtube, .onp-sl-youtube-subscribe {
+      .onp-sl-control-inner-wrap {
+        padding: 5px 7px;
+      }
+      .onp-sl-overlay-front {
+        background: rgb(232, 88, 88);
+      }
+      .onp-sl-overlay-icon {
+        background-position: -207px 8px;
+      }
+      .onp-sl-overlay-back {
+        background: #E85858;
+      }
+      .onp-sl-overlay-header {
+        background-color: #C8231A;
+      }
+    }
+
+    .onp-sl-vk-share, .onp-sl-vk-subscribe, .onp-sl-vk-like {
+      .onp-sl-overlay-front {
+        background: #64a0bc;
+      }
+      .onp-sl-overlay-icon {
+        background-position: -171px 9px;
+      }
+      .onp-sl-overlay-icon {
+        background-position: -171px 9px;
+      }
+      .onp-sl-overlay-back {
+        background: #64a0bc;
+      }
+      .onp-sl-overlay-header {
+        background-color: #4a6887;
+      }
+    }
+
+    .onp-sl-ok-share {
+      .onp-sl-overlay-front {
+        background: #fe8c19;
+      }
+      .onp-sl-overlay-icon {
+        background-position: -95px 7px;
+      }
+      .onp-sl-overlay-back {
+        background: #ea7e12;
+      }
+      .onp-sl-overlay-header {
+        background-color: #d37210;
+      }
+    }
+
+    .onp-sl-mail {
+      .onp-sl-overlay-front {
+        background: #2d7cbb;
+      }
+      .onp-sl-overlay-icon {
+        background-position: -238px 7px;
+      }
+      .onp-sl-overlay-back {
+        background: #1964A6;
+      }
+      .onp-sl-overlay-header {
+        background-color: #0E406C;
+      }
+    }
+  }
+}

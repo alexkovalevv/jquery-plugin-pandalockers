@@ -1,0 +1,55 @@
+/**
+ * Общие настройки тем
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 12.05.2017 
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!autoprefixer:true
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['popup-mode']
+ */
+@import "buttons/social-flip-buttons.less";
+@import "buttons/connect-darkforce-buttons.less";
+@import "buttons/connect-web20-buttons.less";
+@import "buttons/connect-great-arractor-buttons.less";
+
+.onp-sl {
+
+  .stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+  }
+
+  .setIconBgPosition(@buttonName, @x, @y, @width, @height) {
+    .onp-sl-@{buttonName} .onp-sl-icon {
+      .stitches-sprite(@x, @y, @width, @height);
+    }
+  }
+
+  .onp-sl-group {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  &.onp-sl-darkness, &.onp-sl-download, &.onp-sl-facebook, &.onp-sl-gifts, &.onp-sl-glasscase {
+
+    .onp-sl-strong:before, .onp-sl-strong:after {
+      display: none;
+    }
+
+    // Подключаем стили шкафчиков для кнопок
+    .flip-buttons();
+
+    // Подключаем стили из темы darkforce
+    .connect-dark-forse-buttons();
+
+    // Подключаем стили объемных кнопок аторизации
+    .connect-web20-buttons();
+
+    // Подключаем стили из темы great-attractor
+    .connect-great-attractor-buttons();
+  }
+
+}

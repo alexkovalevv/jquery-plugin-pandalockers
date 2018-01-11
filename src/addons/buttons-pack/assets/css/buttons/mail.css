@@ -1,0 +1,46 @@
+/*
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['free','premium']
+ */
+/* --------------------------------
+/* Theme Secrets
+/* -------------------------------*/
+.onp-sl-secrets .onp-sl-mail .onp-sl-overlay-front {
+  background: #2d7cbb;
+  background: -moz-linear-gradient(top, #2d7cbb 0%, #064e93 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d7cbb), color-stop(100%, #064e93));
+  background: -webkit-linear-gradient(top, #2d7cbb 0%, #064e93 100%);
+  background: -o-linear-gradient(top, #2d7cbb 0%, #064e93 100%);
+  background: -ms-linear-gradient(top, #2d7cbb 0%, #064e93 100%);
+  background: linear-gradient(to bottom, #2d7cbb 0%, #064e93 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d7cbb', endColorstr='#064e93', GradientType=0);
+}
+.onp-sl-secrets .onp-sl-mail .onp-sl-overlay-icon {
+  background-position: -238px 7px;
+}
+.onp-sl-secrets .onp-sl-mail .onp-sl-overlay-back {
+  background: #2d7cbb;
+}
+.onp-sl-secrets .onp-sl-mail .onp-sl-overlay-header {
+  background-color: #236192;
+}
+/* --------------------------------
+/* Theme Flat
+/* -------------------------------*/
+.onp-sl-flat .onp-sl-mail .onp-sl-overlay-front {
+  background-color: #2d7cbb;
+  border-bottom-color: #236192;
+}
+.onp-sl-flat .onp-sl-mail .onp-sl-overlay-icon {
+  background-position: -238px 7px;
+}
+.onp-sl-flat .onp-sl-mail .onp-sl-overlay-back {
+  background: #2d7cbb;
+}
+.onp-sl-flat .onp-sl-mail .onp-sl-overlay-header {
+  background-color: #236192;
+}

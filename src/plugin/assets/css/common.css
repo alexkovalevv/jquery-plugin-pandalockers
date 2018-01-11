@@ -1,0 +1,1557 @@
+/**
+ * Social Locker
+ * Copyright 2016, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['free', 'premium', 'full-free', 'full-premium']
+ */
+
+/** ---
+* Normalization 
+*/
+
+.onp-sl,
+.onp-sl .onp-sl-outer-wrap,
+.onp-sl .onp-sl-inner-wrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.onp-sl * {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.onp-sl iframe {
+    margin: 0px !important;
+}
+
+/* Issue #SL-24 */
+.onp-sl-always-visible {
+    display: block !important;
+}
+
+/*.onp-sl-zindex-0 * {
+    z-index: 0 !important;
+}*/
+
+.onp-sl-zindex-9999999 {
+    z-index: 99999999 !important;
+}
+
+.onp-sl-notransition * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    perspective: none !important;
+    perspective-origin: inherit !important;
+    -webkit-perspective: none !important;
+    -webkit-perspective-origin: inherit !important;
+    -moz-perspective: none !important;
+    -moz-perspective-origin: inherit !important;
+}
+
+/** ---
+* Container 
+*/
+
+.onp-sl {
+    position: relative !important;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 625px;
+}
+
+.onp-sl .onp-sl-group {
+    padding: 35px 30px 35px 30px;
+}
+
+.onp-sl-has-terms .onp-sl-group {
+    padding: 35px 30px 25px 30px;
+}
+
+.onp-sl .onp-sl-inner-wrap {
+    position: relative;
+    overflow: visible;
+}
+
+.onp-sl .onp-sl-non-default-screen {
+    padding: 15px;
+}
+
+.onp-sl .onp-sl-first-group.onp-sl-not-single-group {
+
+    /* the first group hasn't to have the bottom padding */
+    padding-bottom: 0px;
+}
+
+/** ---
+* Text & Formating
+*/
+
+/* :: Fonts :: */
+
+.onp-sl,
+.onp-sl input,
+.onp-sl button,
+.onp-sl p {
+    font: normal normal 400 13px/170% "Arial", "Helvetica", sans-serif;
+    color: #111;
+}
+
+/* :: Formating :: */
+
+.onp-sl p {
+    margin: 0 !important;
+}
+
+.onp-sl p + p {
+    margin-top: 7px !important;
+}
+
+.onp-sl .onp-sl-header,
+.onp-sl .onp-sl-text .onp-sl-strong {
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.onp-sl .onp-sl-header {
+    margin-bottom: 15px;
+}
+
+.onp-sl .onp-sl-text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.onp-sl .onp-sl-text p {
+    line-height: 150%;
+}
+
+/* :: Note :: */
+
+.onp-sl .onp-sl-note {
+    font-style: italic;
+    text-align: center;
+    font-size: 12px;
+    line-height: 130%;
+    padding-top: 10px;
+    color: #aaa;
+}
+
+/* :: Lock Icons:: */
+
+.onp-sl .onp-sl-first-group .onp-sl-strong:before,
+.onp-sl .onp-sl-first-group .onp-sl-strong:after {
+    content: " ";
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+    .onp-sl .onp-sl-first-group .onp-sl-strong:before,
+    .onp-sl .onp-sl-first-group .onp-sl-strong:after {
+        display: none;
+    }
+}
+
+/** ---
+* Separators
+*/
+
+.onp-sl-group-separator {
+    text-align: center;
+}
+
+.onp-sl-line-separator {
+    border-bottom: 2px dashed #efefef;
+    margin: 25px;
+    height: 20px;
+}
+
+.onp-sl-line-separator .onp-sl-title {
+    font-size: 14px;
+    line-height: 20px;
+    top: 7px;
+    position: relative;
+    background-color: #efefef;
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 3px;
+    color: #afafaf;
+}
+
+.onp-sl-hiding-link-separator .onp-sl-title {
+    text-decoration: none;
+    border-bottom: 1px dashed #111;
+    color: #111;
+}
+
+.onp-sl-hiding-link-separator .onp-sl-title:hover {
+    border-bottom: none;
+}
+
+/** ---
+* Terms
+*/
+
+.onp-sl-terms-inner-wrap {
+    text-align: center;
+    padding: 20px 40px 0 40px;
+}
+
+.onp-sl-terms,
+.onp-sl-terms a {
+    font-size: 12px;
+    color: #555;
+}
+
+/** ---
+* Errors & Notices
+*/
+
+/* :: errors :: */
+
+.onp-sl .onp-sl-error-body {
+    text-align: center;
+}
+
+.onp-sl .onp-sl-error-title {
+    text-align: center !important;
+    display: inline-block !important;
+    background-color: #cc0000 !important;
+    font-size: 14px !important;
+    line-height: 100% !important;
+    padding: 4px 10px !important;
+    color: #fff !important;
+    vertical-align: top !important;
+    text-shadow: none !important;
+}
+
+.onp-sl .onp-sl-error-title:hover {
+    background-color: #ee0000 !important;
+}
+
+.onp-sl .onp-sl-group-error,
+.onp-sl-locker-error {
+    background: #c00 !important;
+    color: #fff !important;
+    padding: 10px !important;
+    margin-top: 15px !important;
+    text-shadow: none !important;
+    text-align: center;
+}
+
+/* :: notices :: */
+
+.onp-sl-group-notice {
+    background: #ffffda;
+    color: #111 !important;
+    padding: 10px !important;
+    margin-top: 15px !important;
+    text-shadow: none !important;
+    text-align: center;
+}
+
+/** ---
+* Helper tools (timer, close icon)
+*/
+
+.onp-sl .onp-sl-cross {
+    background: url("../img/close.png") 50% 50% no-repeat;
+    width: 16px;
+    height: 16px;
+    opacity: 0.1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 2;
+}
+
+.onp-sl:hover .onp-sl-cross {
+    opacity: 0.2;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+
+.onp-sl .onp-sl-cross:hover {
+    opacity: 0.8;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+
+.onp-sl .onp-sl-timer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 10;
+}
+
+.onp-sl .onp-sl-timer,
+.onp-sl .onp-sl-timer * {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: lowercase;
+}
+
+.onp-sl .onp-sl-timer {
+    color: #000;
+    margin-left: 5px;
+}
+
+.onp-sl .onp-sl-timer-counter {
+    font-weight: bold;
+}
+
+/** ---
+* Overlap Styles
+*/
+
+.onp-sl-overlap-box,
+.onp-sl-overlap-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.onp-sl-overlap-background {
+    background-color: #fefefe;
+    z-index: 25;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: .8;
+}
+
+.onp-sl-blurring-mode .onp-sl-overlap-background {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
+    opacity: .2;
+}
+
+.onp-sl-overlap-locker-box {
+    position: absolute;
+    top: 50%;
+    z-index: 40;
+    left: 0px;
+    right: 0px;
+}
+
+.onp-sl-overlap-locker-box.onp-sl-position-top,
+.onp-sl-overlap-locker-box.onp-sl-position-scroll {
+    top: 0px;
+}
+
+.onp-sl-overlap-box .onp-sl {
+    margin: 0px auto !important;
+}
+
+/* fix for some themes */
+.onp-sl-overlap-mode p {
+    float: none !important;
+}
+
+/* :: Inputs & Buttons :: */
+
+/**
+* 'onp-sl-input' is used for any input controls which has to be styled
+* 'onp-sl-button' is used for any buttons which has to be styled 
+*/
+
+.onp-sl .onp-sl-input,
+.onp-sl .onp-sl-button {
+    font-size: 14px;
+
+    /* height: 36px; */
+    padding: 10px;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.onp-sl .onp-sl-input {
+    line-height: 16px;
+    outline: none;
+
+    width: 100%;
+    display: block;
+
+    background: #fff;
+    border: 1px solid #c4c4c4;
+
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    float: none !important;
+}
+
+.onp-sl .onp-sl-input::-webkit-input-placeholder {
+    line-height: 140%;
+}
+
+.onp-sl .onp-sl-input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input::-webkit-input-placeholder {
+    line-height: 140%;
+}
+
+.onp-sl .onp-sl-input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.onp-sl .onp-sl-button {
+    border: 0px;
+    padding: 6px 10px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: none;
+
+    /* line-height: 36px; */
+    text-decoration: none;
+
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.onp-sl .onp-sl-form-button {
+    padding: 8px 15px;
+}
+
+.onp-sl .onp-sl-button:hover {
+    background-color: #e5e5e5;
+}
+
+.onp-sl .onp-sl-button:focus {
+    outline: none;
+}
+
+.onp-sl .onp-sl-button:disabled {
+    cursor: default;
+}
+
+.onp-sl .onp-sl-button.load:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    height: 24px;
+    width: 24px;
+    margin: -12px 0 0 -12px;
+    background: url("../img/button_loader.gif");
+}
+
+.onp-sl .onp-sl-checkbox {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    background: #fff;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    border: 1px solid #c4c4c4;
+}
+
+.onp-sl .onp-sl-checkbox:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -webkit-transition: opacity 0.1s;
+}
+
+.onp-sl .onp-sl-checkbox:after {
+    content: '\f00c';
+    top: 0px;
+    left: -1px;
+    width: 17px;
+    height: 17px;
+    font: normal 12px/16px FontAwesome;
+    text-align: center;
+}
+
+.onp-sl input:checked + .onp-sl-checkbox:after {
+    opacity: 1;
+}
+
+.onp-sl .onp-sl-dropdown + i {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 5px;
+    height: 11px;
+    background: transparent;
+}
+
+.onp-sl .onp-sl-dropdown + i:after,
+.onp-sl .onp-sl-dropdown + i:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.onp-sl .onp-sl-dropdown + i:after {
+    bottom: 0;
+    border-top: 4px solid #333;
+}
+
+.onp-sl .onp-sl-dropdown + i:before {
+    top: 0;
+    border-bottom: 4px solid #333;
+}
+
+/* :: Inputs & Buttons :: -> Icons */
+
+.onp-sl .onp-sl-icon {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.onp-sl .onp-sl-icon-append,
+.onp-sl .onp-sl-icon-prepend {
+    position: absolute;
+    top: 5px;
+    width: 29px;
+    height: 29px;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    color: #ccc;
+    border-color: #e5e5e5;
+}
+
+.onp-sl .onp-sl-icon-append {
+    right: 5px;
+    padding-left: 3px;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.onp-sl .onp-sl-icon-prepend {
+    left: 5px;
+    padding-right: 3px;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.onp-sl .onp-sl-icon-prepend + input,
+.onp-sl .onp-sl-icon-prepend + textarea {
+    padding-left: 46px;
+}
+
+.onp-sl .onp-sl-icon-append + input,
+.onp-sl .onp-sl-icon-append + textarea {
+    padding-right: 46px;
+}
+
+.onp-sl .onp-sl-icon-prepend + .onp-sl-icon-append + input,
+.onp-sl .onp-sl-icon-prepend + .onp-sl-icon-append + textarea {
+    padding-left: 46px;
+}
+
+/* :: Inputs & Buttons :: -> Forms */
+
+.onp-sl .onp-sl-field {
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.onp-sl .onp-sl-field .onp-sl-field-title {
+    margin: 15px 0 3px 0;
+}
+
+.onp-sl .onp-sl-field-label {
+    margin: 15px 0 3px 0;
+}
+
+.onp-sl .onp-sl-field .onp-sl-field-control {
+    position: relative;
+}
+
+.onp-sl .onp-sl-field-separator {
+    border-top: 1px solid #f1f1f1;
+}
+
+/* :: Inputs & Buttons :: -> Forms -> Checkbox */
+
+.onp-sl .onp-sl-field-checkbox {
+    margin-bottom: 5px;
+}
+
+.onp-sl .onp-sl-group .onp-sl-field-checkbox:last-child {
+    margin-bottom: 10px;
+}
+
+.onp-sl .onp-sl-field-checkbox label {
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.onp-sl .onp-sl-field-checkbox label > * {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.onp-sl .onp-sl-field-checkbox input {
+    display: none;
+}
+
+/* :: Inputs & Buttons :: -> Validation */
+
+.onp-sl .onp-sl-field.onp-sl-error-state .onp-sl-input,
+.onp-sl .onp-sl-field.onp-sl-error-state .onp-sl-checkbox {
+    background-color: #fff0f0;
+}
+
+.onp-sl .onp-sl-field .onp-sl-validation-error {
+    text-align: left;
+    display: block;
+    margin-top: 6px;
+    padding: 0 1px;
+    font-style: normal;
+    line-height: 15px;
+    color: #ee9393;
+    padding-bottom: 5px;
+}
+
+/** ---
+* GROUP: Social Buttons
+*/
+
+/**
+* Locker Buttons
+*/
+
+.onp-sl .onp-sl-social-buttons {
+    text-align: center;
+    padding: 30px;
+}
+
+.onp-sl .onp-sl-text + .onp-sl-social-buttons {
+    margin-top: 5px;
+}
+
+.onp-sl .onp-sl-social-buttons .onp-sl-text {
+    margin-bottom: 3px;
+}
+
+.onp-sl .onp-sl-social-buttons .onp-sl-text .onp-sl-strong {
+    margin-bottom: 0px;
+}
+
+/**
+* The structure of the elements:
+
+* .onp-sl-social-buttons > .onp-sl-control
+* .onp-sl-social-buttons > .onp-sl-control > .onp-sl-control-inner-wrap
+* .onp-sl-social-buttons > .onp-sl-control > .onp-sl-control-inner-wrap > .onp-sl-social-button
+*/
+
+.onp-sl-social-buttons .onp-sl-control {
+    min-width: 104px;
+
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+
+    margin: 10px 5px 0 5px;
+    background-color: #f2f2f2;
+}
+
+.onp-sl-social-buttons .onp-sl-control-inner-wrap {
+    height: 40px;
+    min-width: 120px;
+    padding: 10px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.onp-sl-social-buttons .onp-sl-social-button {
+    overflow: hidden;
+    padding: 1px;
+    position: relative;
+    top: -1px;
+}
+
+.onp-sl-social-buttons .onp-sl-state-loading .onp-sl-control-inner-wrap {
+    background: url("../img/button-loader-f2f2f2.gif") 50% 50% no-repeat;
+}
+
+/* facebook buttons, google buttons and tweet button always has the fixed size */
+.onp-sl-social-buttons .onp-sl-facebook .onp-sl-social-button,
+.onp-sl-social-buttons .onp-sl-google .onp-sl-social-button,
+.onp-sl-social-buttons .onp-sl-twitter-tweet .onp-sl-social-button {
+    width: 104px;
+}
+
+.onp-sl-social-buttons .onp-sl-google .onp-sl-social-button {
+    position: relative;
+}
+
+/**
+* Adjusting position of the social buttons
+*/
+
+.onp-sl-opera .onp-sl-social-buttons .fb-like {
+    position: relative;
+    top: -2px;
+}
+
+.onp-sl-social-buttons .fb-like span {
+    vertical-align: top !important;
+
+    overflow: hidden;
+    padding: 0 1px;
+    margin: 0px;
+}
+
+/* remove the popup comment box */
+.onp-sl-social-buttons .fb-like span,
+.onp-sl-social-buttons .fb-like iframe {
+    height: 22px;
+}
+
+/* facebook &share & youtube subscribe buttons */
+.onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-social-button,
+.onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-social-button {
+    line-height: 1%;
+}
+
+.onp-sl-social-buttons.onp-sl-vertical .onp-sl-social-button span {
+    top: 1px;
+}
+
+.onp-sl-social-buttons .onp-sl-feature-overlay,
+.onp-sl-social-buttons .onp-sl-facebook-share-overlay,
+.onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    z-index: 20;
+}
+
+.onp-sl-social-buttons .onp-sl-feature-overlay:hover,
+.onp-sl-social-buttons .onp-sl-facebook-share-overlay:hover,
+.onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap {
+    padding-top: 8px;
+}
+
+.onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-social-button {
+    min-width: 108px;
+}
+
+/**
+* Counters
+*/
+
+.onp-sl-social-buttons.onp-sl-no-counters .onp-sl-social-button {
+    text-align: center;
+}
+
+/**
+* Errors
+*/
+
+.onp-sl-social-buttons .onp-sl-button-error {
+    line-height: normal !important;
+    color: red !important;
+    font-family: arial, sans-serif !important;
+    font-size: 14px !important;
+}
+
+/**
+* Unsupported buttons
+*/
+
+.onp-sl-social-buttons .onp-sl-unsupported {
+    font-size: 10px;
+    text-align: center;
+    line-height: 13px;
+}
+
+/**
+* Covers for buttons
+*/
+
+.onp-sl-social-buttons .onp-sl-button-overlay,
+.onp-sl-social-buttons .onp-sl-button-overlay:hover {
+    width: 100%;
+    border-bottom: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-decoration: none;
+}
+
+.onp-sl-social-buttons .onp-sl-button-overlay * {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.onp-sl-social-buttons .onp-sl-overlay-front,
+.onp-sl-social-buttons .onp-sl-overlay-back {
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+/**
+* Base styles of the flip effect
+*/
+
+.onp-sl-social-buttons .onp-sl-flip .onp-sl-control-inner-wrap {
+    perspective: 500px;
+    perspective-origin: 50% 0;
+    -webkit-perspective: 500px;
+    -webkit-perspective-origin: 50% 0;
+    -moz-perspective: 500px;
+    -moz-perspective-origin: 50% 0;
+}
+
+.onp-sl-social-buttons .onp-sl-flip .onp-sl-button-overlay,
+.onp-sl-social-buttons .onp-sl-flip .onp-sl-button-overlay:hover {
+    display: block;
+
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transition: transform .3s ease;
+    transform: translate(0);
+
+    -webkit-transform-origin: bottom;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .3s ease;
+    -webkit-transform: translateY(0) rotateX(0);
+
+    -moz-transform-origin: bottom;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: -moz-transform .3s ease;
+    -moz-transform: translate(0);
+
+    text-decoration: none !important;
+
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+
+.onp-sl-social-buttons .onp-sl-flip .onp-sl-overlay-back {
+    transform: rotateX(-180deg) translateZ(4px);
+    -webkit-transform: rotateX(-180deg) translateZ(4px);
+    -moz-transform: rotateX(-180deg) translateZ(4px);
+}
+
+.onp-sl-social-buttons .onp-sl-flip .onp-sl-overlay-header {
+    height: 4px;
+
+    transform-origin: top;
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: top;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: top;
+    -moz-transform: rotateX(-90deg);
+}
+
+.onp-sl-social-buttons .onp-sl-touch .onp-sl-button-overlay {
+    cursor: pointer;
+}
+
+/* button in the error state */
+.onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-text {
+    text-decoration: line-through;
+    color: #fff;
+    text-shadow: none;
+}
+
+.onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-front,
+.onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-header,
+.onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-back {
+    background: #c00 !important;
+}
+
+.onp-sl-social-buttons .onp-sl-state-error .onp-sl-social-button {
+    display: none;
+}
+
+.onp-sl-no-touch .onp-sl-flip:hover .onp-sl-button-overlay,
+.onp-sl-social-buttons .onp-sl-flip-hover .onp-sl-button-overlay {
+    display: block !important;
+    transform: translateY(4px) rotateX(-105deg);
+    -webkit-transform: translateY(4px) rotateX(-105deg);
+    -moz-transform: translateY(4px) rotateX(-105deg);
+}
+
+.onp-sl-no-touch .onp-sl-flip.onp-sl-step-completed:hover .onp-sl-button-overlay,
+.onp-sl-social-buttons .onp-sl-flip-hover.onp-sl-step-completed .onp-sl-button-overlay {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+}
+
+.onp-sl-social-buttons .onp-sl-flip:hover .onp-sl-overlay-back {
+    border-top: 2px solid #eee;
+}
+
+.onp-sl-social-buttons .onp-sl-flip.onp-sl-step-completed .onp-sl-overlay-front {
+    background: #777 !important;
+    color: #fff;
+}
+
+.onp-sl-social-buttons .onp-sl-flip.onp-sl-step-completed .onp-sl-overlay-text {
+    text-decoration: line-through;
+}
+
+/**
+* Adjustments for Facebook Buttons
+*/
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-es_ES .onp-sl-social-button-facebook-like,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-es_ES .onp-sl-social-button-facebook-share {
+    width: 114px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-ru_RU .onp-sl-social-button-facebook-like,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-ru_RU .onp-sl-social-button-facebook-share {
+    width: 124px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-pl_PL .onp-sl-social-button-facebook-like,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-pl_PL .onp-sl-social-button-facebook-share {
+    width: 120px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-de_DE .onp-sl-social-button-facebook-like,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-de_DE .onp-sl-social-button-facebook-share {
+    width: 120px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-pt_BR .onp-sl-social-button-facebook-like,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-pt_BR .onp-sl-social-button-facebook-share {
+    width: 130px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-cs_CZ .onp-sl-social-button-facebook-like,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-cs_CZ .onp-sl-social-button-facebook-share {
+    width: 125px !important;
+}
+
+/* See #SLJQ-14 */
+.onp-sl-social-buttons.onp-sl-no-counters .fb_iframe_widget {
+    display: inline-block !important;
+}
+
+.onp-sl-social-buttons.onp-sl-no-counters .fb-like {
+    overflow: hidden;
+    width: 50px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters .fb-share-button {
+    overflow: hidden;
+    width: 60px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-es_ES .fb-like {
+    width: 78px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-es_ES .fb-share-button {
+    width: 81px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-it_IT .fb-like {
+    width: 78px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-it_IT .fb-share-button {
+    width: 81px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-fr_FR .fb-like {
+    width: 63px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-fr_FR .fb-share-button {
+    width: 73px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-ru_RU .fb-like {
+    width: 81px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-ru_RU .fb-share-button {
+    width: 91px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-fi_FI .fb-like {
+    width: 68px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-fi_FI .fb-share-button {
+    width: 43px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-pl_PL .fb-like {
+    width: 59px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-pl_PL .fb-share-button {
+    width: 71px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-de_DE .fb-like {
+    width: 85px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-pt_BR .fb-like {
+    width: 59px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-pt_BR .fb-share-button {
+    width: 98px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-cs_CZ .fb-like {
+    width: 93px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-cs_CZ .fb-share-button {
+    width: 55px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-bg_BG .fb-share-button {
+    width: 95px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-bg_BG .fb-like {
+    width: 95px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-bg_BG .onp-sl-social-button-facebook-like {
+    width: 125px;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-bg_BG .fb-like iframe,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-bg_BG .fb-like span {
+    width: 125px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-bg_BG .onp-sl-social-button-facebook-share {
+    width: 130px;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-bg_BG .fb-share-button iframe,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-bg_BG .fb-share-button span {
+    width: 130px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-nl_NL .fb-share-button {
+    width: 92px !important;
+}
+
+.onp-sl-horizontal.onp-sl-no-counters.onp-sl-lang-nl_NL .fb-like {
+    width: 92px !important;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-nl_NL .onp-sl-social-button-facebook-like {
+    width: 120px;
+}
+
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-nl_NL .fb-like iframe,
+.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-nl_NL .fb-like span {
+    width: 120px !important;
+}
+
+/** ---
+* GROUP: Connect Buttons
+*/
+
+.onp-sl-connect-buttons {
+    text-align: center;
+}
+
+.onp-sl-connect-buttons .onp-sl-control,
+.onp-sl-connect-buttons .onp-sl-control .onp-sl-icon,
+.onp-sl-connect-buttons .onp-sl-control .onp-sl-connect-button {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.onp-sl-connect-buttons .onp-sl-button {
+    background-color: #f1f1f1;
+    padding: 0 5px;
+    margin: 7px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+.onp-sl-connect-buttons .onp-sl-control + .onp-sl-control {
+    margin-top: 10px;
+}
+
+.onp-sl-connect-buttons .onp-sl-control:hover {
+    background-color: #e5e5e5;
+}
+
+.onp-sl-connect-buttons .onp-sl-short {
+    display: none;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-loading,
+.onp-sl-connect-buttons .onp-sl-state-error {
+    position: relative;
+    cursor: default !important;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-loading .onp-sl-icon,
+.onp-sl-connect-buttons .onp-sl-state-loading .onp-sl-connect-button {
+    display: none;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-error .onp-sl-icon,
+.onp-sl-connect-buttons .onp-sl-state-error .onp-sl-connect-button {
+    display: none;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-loading .onp-sl-control-inner-wrap {
+    background: url("../img/button-loader-ffffff.gif") 50% 50% no-repeat;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-loading .onp-sl-control-inner-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-error .onp-sl-control-inner-wrap {
+    position: relative;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.onp-sl-connect-buttons .onp-sl-state-error .onp-sl-control-inner-wrap .onp-sl-error-title {
+    height: 22px !important;
+    padding: 0px 10px !important;
+    line-height: 22px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+/** ---
+* GROUP: Subscription
+*/
+
+.onp-sl-subscription .onp-sl-button {
+    width: 100%;
+}
+
+.onp-sl-subscription .onp-sl-control {
+    padding: 10px 0 0 0;
+    max-width: 350px;
+    margin: auto;
+}
+
+.onp-sl-custom-form .onp-sl-subscription .onp-sl-field-submit {
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.onp-sl-custom-form .onp-sl-subscription .onp-sl-field-submit:before {
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin-top: -1px;
+    border-top: 1px solid #f1f1f1;
+}
+
+/* As Last Group */
+
+.onp-sl-subscription.onp-sl-last-group.onp-sl-separator-hides {
+    padding-top: 5px;
+}
+
+.onp-sl-subscription.onp-sl-last-group.onp-sl-separator-shows {
+    border-top: 1px solid #eaeaea;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+/**
+* SCREENS
+*/
+
+/** ---
+* SCREEN: Enter Email
+*/
+
+.onp-sl-screen-enter-email .onp-sl-button {
+    width: 100%;
+}
+
+.onp-sl-screen-enter-email .onp-sl-control {
+    max-width: 350px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/** ---
+* SCREEN: Email Confirmation
+*/
+
+.onp-sl-screen-email-confirmation {
+    text-align: center;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-screen-message {
+    display: block;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-cancel {
+    color: #006ca7;
+    text-decoration: none;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-cancel:hover {
+    background-color: #ffffda;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-highlight {
+    border-radius: 3px;
+    font-style: italic;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-open.onp-sl-has-icon {
+    position: relative;
+    padding-left: 45px;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-open-button-wrap {
+    padding-top: 20px;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-note {
+    padding-top: 16px;
+}
+
+.onp-sl-screen-email-confirmation .onp-sl-open .onp-sl-icon {
+    background: url("../img/email-services.png") 0 70px no-repeat;
+    display: inline-block;
+    width: 28px;
+    height: 21px;
+    vertical-align: baseline;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -9px;
+}
+
+/** ---
+* SCREEN: Data Procesing
+*/
+
+.onp-sl-screen-data-processing {
+    text-align: center;
+    padding: 60px;
+}
+
+.onp-sl-screen-data-processing .onp-sl-process-spin {
+    height: 100px;
+    background: url("../img/large-loader.gif") center no-repeat;
+}
+
+.onp-sl-screen-data-processing .onp-sl-processing-sreen-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/** ---
+ * Pikaday
+ */
+
+.onp-sl .pika-single {
+    z-index: 9999;
+    display: block;
+    position: absolute !important;
+    right: 0px !important;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom-color: #bbb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: none;
+}
+
+/*
+clear child float (pika-lendar), using the famous micro clearfix hack
+http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.onp-sl .pika-single:before,
+.onp-sl .pika-single:after {
+    content: " ";
+    display: table;
+}
+
+.onp-sl .pika-single:after {
+    clear: both
+}
+
+.onp-sl .pika-single {
+    *zoom: 1
+}
+
+.onp-sl .pika-single.is-hidden {
+    display: none;
+}
+
+.onp-sl .pika-single.is-bound {
+    position: absolute;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+}
+
+.onp-sl .pika-lendar {
+    float: left;
+    width: 240px;
+    margin: 8px;
+}
+
+.onp-sl .pika-title {
+    position: relative;
+    text-align: center;
+}
+
+.onp-sl .pika-label {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.onp-sl .pika-title select {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9998;
+    margin: 0;
+    left: 0;
+    top: 5px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.onp-sl .pika-prev,
+.onp-sl .pika-next {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 30px;
+    /* hide text using text-indent trick, using width value (it's enough) */
+    text-indent: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    opacity: .5;
+    *position: absolute;
+    *top: 0;
+}
+
+.onp-sl .pika-prev:hover,
+.onp-sl .pika-next:hover {
+    opacity: 1;
+}
+
+.onp-sl .pika-prev,
+.onp-sl .is-rtl .pika-next {
+    float: left;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==');
+    *left: 0;
+}
+
+.onp-sl .pika-next,
+.onp-sl .is-rtl .pika-prev {
+    float: right;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
+    *right: 0;
+}
+
+.onp-sl .pika-prev.is-disabled,
+.onp-sl .pika-next.is-disabled {
+    cursor: default;
+    opacity: .2;
+}
+
+.onp-sl .pika-select {
+    display: inline-block;
+    *display: inline;
+}
+
+.onp-sl .pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+.onp-sl .pika-table th,
+.onp-sl .pika-table td {
+    width: 14.285714285714286%;
+    padding: 0;
+}
+
+.onp-sl .pika-table th {
+    color: #999;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.onp-sl .pika-button {
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    color: #666 !important;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    background: #f5f5f5;
+    text-shadow: none;
+}
+
+.onp-sl .pika-week {
+    font-size: 11px;
+    color: #999;
+}
+
+.onp-sl .is-today .pika-button {
+    color: #33aaff;
+    font-weight: bold;
+}
+
+.onp-sl .is-selected .pika-button {
+    color: #fff !important;
+    font-weight: bold;
+    background: #33aaff;
+    box-shadow: inset 0 1px 3px #178fe5;
+    border-radius: 3px;
+}
+
+.onp-sl .is-disabled .pika-button {
+    pointer-events: none;
+    cursor: default;
+    color: #999;
+    opacity: .3;
+}
+
+.onp-sl .pika-button:hover {
+    color: #fff !important;
+    background: #ff8000 !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+
+/* styling for abbr */
+.onp-sl .pika-table abbr {
+    border-bottom: none;
+    cursor: help;
+}
+
+iframe[src^="https://apis.google.com/u/0/_/widget/oauthflow/toast"] {
+    display: none;
+}

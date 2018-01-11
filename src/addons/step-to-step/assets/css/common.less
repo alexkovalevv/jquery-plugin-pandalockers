@@ -1,0 +1,607 @@
+/**
+ * Общие стили для конструктора шаг за шагом
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 01.05.2017
+ *
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['step-to-step']
+ */
+
+.onp-sl {
+  .onp-sl-screen {
+    text-shadow: none;
+    &.onp-sl-screen-step {
+      .onp-sl-header {
+        display: none !important;
+      }
+      .onp-sl-text, .onp-sl-text p {
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      .onp-sl-text {
+        p {
+          margin-top: 15px;
+        }
+        h1, h2, h3, h4, h5 {
+          margin: 15px 0 10px;
+        }
+        h1 {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+        h5 {
+          font-size: 14px;
+        }
+      }
+    }
+    &.onp-sl-screen-step {
+      padding: 15px;
+    }
+    .onp-sts-progress-line {
+      //margin-top: 1px;
+      text-align: left;
+      text-shadow: none;
+
+      .onp-sts-step-mark {
+        display: block;
+        padding-right: 10px;
+        font-size: 14px;
+
+        &.onp-sts-top-line {
+          font-size: 15px;
+          span {
+            font-size: 14px;
+          }
+        }
+
+        &.onp-sts-finish {
+          display: none;
+        }
+      }
+      .onp-sts-step-mark + .onp-sts-step-mark {
+        margin-left: 5px;
+      }
+      span {
+        display: inline-block;
+        padding: 10px 10px;
+        font-weight: bold;
+        margin-right: 8px;
+      }
+      & + .onp-sl-group {
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+    }
+
+    .onp-slp-control-buttons-line {
+      text-align: center;
+      margin-top: 30px;
+      .onp-sl-button {
+        display: inline-block;
+        height: auto !important;
+        padding: 10px 20px !important;
+        line-height: normal;
+        transition: all 0.4s ease-in;
+      }
+    }
+
+    .onp-slp-close-button {
+      & + .onp-slp-next-button {
+        margin-left: 10px;
+      }
+    }
+
+  }
+}
+
+/**
+*   DARKNESS THEME
+*/
+.onp-sl.onp-sl-darkness {
+  .onp-sts-progress-line {
+    color: #4e4e4e;
+    .onp-sts-step-mark {
+      background: rgba(21, 21, 21, 0.58);
+      &.onp-sts-top-line {
+        background: rgba(29, 27, 27, 0.72);
+        color: #ffffff;
+        span {
+          background: #ffeb31;
+          color: #404040;
+        }
+      }
+    }
+
+    span {
+      background: #1d1d1d;
+      color: #404040;
+    }
+  }
+  .onp-slp-control-buttons-line {
+    .onp-sl-button {
+      text-shadow: none;
+      border: 0;
+      border-radius: 4px;
+      border-bottom: 2px solid rgba(0, 0, 0, .13);
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .onp-slp-close-button {
+      background-color: #ffeb31;
+      color: #846b0f;
+      &:hover {
+        background-color: #e7d330;
+      }
+    }
+    .onp-slp-next-button {
+      background-color: #CDDC39;
+      color: #687111;
+      &:hover {
+        background-color: #b6c533;
+      }
+    }
+  }
+}
+
+/**
+*   FRIENDLY GIANT THEME
+*/
+.onp-sl.onp-sl-glasscase, .onp-sl.onp-sl-friendly-giant {
+  .onp-sl-screen-step {
+    padding: 10px;
+  }
+  .onp-sts-progress-line {
+    color: #c5c5c5;
+    .onp-sts-step-mark {
+      background: rgba(245, 245, 245, 0.4);
+
+      &.onp-sts-top-line {
+        background: rgba(241, 241, 241, 0.62);
+        color: #a09a9a;
+        span {
+          background-color: #ffdb4d;
+          color: #846b0f;
+        }
+      }
+    }
+
+    span {
+      background: #efefef;
+      color: #c3c3c3;
+    }
+  }
+}
+
+.onp-sl.onp-sl-friendly-giant {
+  .onp-slp-control-buttons-line {
+    .onp-sl-button {
+      height: auto !important;
+      padding: 10px 20px !important;
+      line-height: normal;
+    }
+    .onp-slp-close-button {
+      background-color: #ffdb4d;
+      color: #846b0f;
+    }
+    .onp-slp-next-button {
+      background-color: #CDDC39;
+      color: #687111;
+    }
+  }
+}
+
+/**
+*   GLASSCASE THEME
+*/
+.onp-sl.onp-sl-glasscase {
+  .onp-slp-control-buttons-line {
+    .onp-sl-button {
+      text-shadow: none;
+      border: 0;
+      border-radius: 4px;
+      border-bottom: 2px solid rgba(0, 0, 0, .13);
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+
+    }
+    .onp-slp-close-button {
+      background-color: #ffdb4d;
+      color: #846b0f;
+      &:hover {
+        background-color: #f2cd4a;
+      }
+    }
+    .onp-slp-next-button {
+      background-color: #CDDC39;
+      color: #687111;
+      &:hover {
+        background-color: #b6c533;
+      }
+    }
+  }
+}
+
+/**
+*   DOWNLOAD THEME
+*/
+.onp-sl.onp-sl-download {
+  border-radius: 5px;
+
+  .onp-sts-progress-line {
+    color: #1e7e8a;
+    text-shadow: 0 1px 1px #7fe1ec;
+
+    .onp-sts-step-mark {
+      border-radius: 5px;
+      background: none;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(251, 249, 244, 0.19);
+
+      &.onp-sts-top-line {
+        margin-top: 10px;
+        background: rgb(0, 165, 187);
+        color: #a0eff9;
+        border: 0;
+        box-shadow: inset 0 0 5px #016673;
+        text-shadow: none;
+        span {
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+          //background: rgb(0, 190, 213);
+        }
+      }
+    }
+
+    span {
+      background: rgb(0, 190, 213);
+      color: #038d9e;
+    }
+  }
+
+  .onp-slp-control-buttons-line {
+    .onp-sl-button {
+      text-shadow: none;
+      border: 0;
+      border-radius: 4px;
+      border-bottom: 2px solid rgba(0, 0, 0, .13);
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .onp-slp-close-button {
+      background-color: #ffeb31;
+      color: #846b0f;
+      transition: all 0.4s ease-in;
+      &:hover {
+        background-color: #e7d330;
+      }
+    }
+    .onp-slp-next-button {
+      background-color: #CDDC39;
+      color: #687111;
+      transition: all 0.4s ease-in;
+      &:hover {
+        background-color: #b6c533;
+      }
+    }
+  }
+}
+
+/**
+*   SECRETS THEME
+*/
+.onp-sl.onp-sl-secrets, .onp-sl.onp-sl-starter, .onp-sl.onp-sl-dandyish, .onp-sl.onp-sl-flat, .onp-sl.onp-sl-great-attractor {
+  .onp-sts-progress-line {
+    color: #bfbfbf;
+    .onp-sts-step-mark {
+      background: rgba(220, 220, 220, 0.23);
+
+      &.onp-sts-top-line {
+        margin-top: 3px;
+        background: rgba(247, 247, 247, 0.84);
+        color: #565656;
+        border: 0;
+        span {
+          border: 2px solid #e0e0e0;
+          color: #696969;
+        }
+      }
+    }
+
+    span {
+      background: #efefef;
+      color: #b7b7b7;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.57);
+    }
+  }
+}
+
+/**
+*   GREAT ATTRACTOR THEME
+*/
+.onp-sl.onp-sl-great-attractor {
+  .onp-slp-control-buttons-line {
+    .onp-sl-button {
+      padding: 7px 15px;
+
+    }
+    .onp-slp-close-button {
+      box-shadow: inset 6px 0 1px #ffd878;
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        box-shadow: inset 200px 0 1px #ffd878;
+        border-color: #f2cc73;
+      }
+    }
+    .onp-slp-next-button {
+      box-shadow: inset 6px 0 1px #d8e872;
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        box-shadow: inset 200px 0 1px #d8e872;
+        border-color: #c3d36a;
+      }
+    }
+  }
+}
+
+/**
+*   GLASS THEME
+*/
+.onp-sl.onp-sl-glass {
+  .onp-sts-progress-line {
+    color: #7a7979;
+    .onp-sts-step-mark {
+      background: rgba(228, 228, 228, 0.23);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(251, 249, 244, 0.68);
+      border-radius: 5px;
+
+      &.onp-sts-top-line {
+        margin-top: 3px;
+        background: #f3f3f3;
+        color: #565656;
+        span {
+          color: #565656;
+          border: 2px solid rgba(86, 86, 86, 0.28);
+        }
+      }
+    }
+
+    span {
+      border: 2px solid #fdfdfd;
+      background: rgba(255, 255, 255, 0.54);
+      color: #bbbbbb;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.57);
+    }
+  }
+}
+
+/**
+*   DARKFORCE THEME
+*/
+.onp-sl.onp-sl-dark-force {
+  .onp-sts-progress-line {
+    color: #b3b7c6;
+    .onp-sts-step-mark {
+      background: rgb(39, 61, 78);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(251, 249, 244, 0.08);
+      border-radius: 5px;
+
+      &.onp-sts-top-line {
+        margin-top: 3px;
+        background: rgba(0, 0, 0, 0.33);
+        color: #b3b7c6;
+        span {
+          color: #13495d;
+          background: #42c9fa;
+        }
+      }
+    }
+
+    span {
+      border: 0;
+      background: rgba(56, 86, 109, 0.55);
+      color: #bbbbbb;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  .onp-slp-control-buttons-line {
+    .onp-slp-close-button {
+      background-color: #FFC107;
+      color: #860;
+    }
+    .onp-slp-next-button {
+      background-color: #CDDC39;
+      color: #687111;
+    }
+  }
+
+}
+
+/**
+*   FACEBOOK THEME
+*/
+.onp-sl.onp-sl-facebook {
+  border-radius: 0;
+  .onp-sl-screen-step {
+    padding: 0;
+  }
+  .onp-sl-screen {
+    .onp-sts-progress-line + .onp-sl-group {
+      padding: 0;
+    }
+  }
+  .onp-sts-progress-line {
+    color: rgba(53, 72, 101, 0.55);
+    margin-top: 0;
+    .onp-sts-step-mark {
+      background: rgb(245, 245, 245);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      &.onp-sts-top-line {
+        background: rgba(26, 67, 119, 0.74);
+        color: #ffffff;
+        span {
+          color: #e4eaf7;
+          background: rgba(26, 67, 119, 0.41);
+        }
+      }
+    }
+
+    span {
+      border: 0;
+      background: rgb(234, 234, 234);
+      color: rgba(97, 106, 121, 0.52);
+    }
+  }
+
+  .onp-slp-control-buttons-line {
+    .onp-sl-button {
+      text-shadow: none;
+      border: 0;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .onp-slp-close-button {
+      background-color: #eaeaea;
+      color: #696969;
+      transition: all 0.4s ease-in;
+      &:hover {
+        background-color: #dbdbdb;
+      }
+    }
+    .onp-slp-next-button {
+      background-color: #FFC107;
+      color: #967309;
+      transition: all 0.4s ease-in;
+      &:hover {
+        background-color: #eeb207;
+      }
+    }
+  }
+}
+
+/**
+ *   GIFTS THEME
+ */
+.onp-sl.onp-sl-gifts {
+  .onp-sl-screen-step {
+    padding: 0;
+    position: relative;
+    /*.onp-sl-group {
+      padding-top: 30px;
+    }*/
+  }
+  .onp-sts-progress-line {
+    color: #b3b7c6;
+
+    .onp-sts-step-mark {
+      position: absolute;
+      top: 105px;
+      right: -96px;
+      width: 96px;
+      height: 43px;
+      overflow: hidden;
+      padding: 0;
+
+      &.onp-sts-top-line {
+        position: relative;
+        top: auto;
+        overflow: visible;
+        left: auto;
+        right: auto;
+        margin-left: 300px;
+        padding-top: 40px;
+        width: 400px;
+        height: 43px;
+        background: none;
+        text-align: center;
+        color: #495000;
+        background: #cddc39;
+        font-size: 22px;
+        box-sizing: border-box;
+
+        span {
+          position: absolute;
+          top: 30px;
+          right: -96px;
+          color: #6d540a;
+          text-align: center;
+          line-height: 3;
+          background: #FFC107;
+          width: 96px;
+          height: 43px;
+          padding: 0;
+          margin: 0;
+          border-radius: 0;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    span {
+      line-height: 3;
+      background: #7c7c7c;
+      width: 96px;
+      height: 43px;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .onp-sts-step-2-mark {
+      top: 75px;
+    }
+    .onp-sts-step-3-mark {
+      top: 120px;
+    }
+    .onp-sts-step-4-mark {
+      top: 165px;
+    }
+    .onp-sts-step-5-mark {
+      top: 208px;
+    }
+  }
+
+  .onp-slp-control-buttons-line {
+    .onp-slp-close-button {
+      background-color: #FFC107;
+      color: #860;
+    }
+    .onp-slp-next-button {
+      background-color: #CDDC39;
+      color: #687111;
+    }
+  }
+
+}
+
+
+
+

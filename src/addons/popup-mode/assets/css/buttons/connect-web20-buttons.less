@@ -1,0 +1,147 @@
+.web20SetButtonBgColor(@buttonName, @bgColor) {
+  .onp-sl-@{buttonName} {
+    @bgColorDarken5: darken(@bgColor, 5%);
+    @bgColorDarken15: darken(@bgColor, 15%);
+
+    background: @bgColor;
+    background: linear-gradient(to bottom, lighten(@bgColor, 15%) 1%, @bgColor 6%, darken(@bgColor, 15%) 75%, @bgColorDarken5);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{bgColor}', endColorstr='@{bgColorDarken5}', GradientType=0)";
+
+    &:hover {
+      background: linear-gradient(to bottom, lighten(@bgColor, 15%) 1%, @bgColor 6%, darken(@bgColor, 15%) 75%, @bgColorDarken15);
+      filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{bgColor}', endColorstr='@{@bgColorDarken15}', GradientType=0)";
+      .onp-sl-icon {
+        background-color: darken(@bgColor, 25%);
+      }
+    }
+    .onp-sl-icon {
+      background-color: darken(@bgColor, 15%);
+    }
+  }
+}
+
+.connect-web20-buttons() {
+  .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 {
+    .onp-sl-control {
+      font-family: "Segoe UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+      border-radius: 3px;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 13px;
+      padding: 6px 24px;
+      text-decoration: none;
+
+      &:active {
+        position: relative;
+        top: 1px;
+      }
+
+      &.onp-sl-state-loading,
+      &.onp-sl-state-error {
+        border: 0px !important;
+        background: none !important;
+        background-color: rgba(23, 23, 23, 0.2) !important;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .12), inset 0 1px 0 rgba(0, 0, 0, .2) !important;
+      }
+      &.onp-sl-state-loading .onp-sl-control-inner-wrap {
+        background-image: url("../img/button-loader-232323.gif");
+        background-repeat: no-repeat;
+      }
+
+      .onp-sl-icon {
+        position: absolute;
+        border-radius: 100px;
+        box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.33);
+
+        width: 32px;
+        height: 32px;
+        top: 9px;
+        left: 9px;
+        background-image: url("../img/social-icons.png");
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    /**
+     Big style
+   */
+    &.onp-sl-buttons-size-big {
+      .onp-sl-button {
+        width: 170px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 2.1;
+      }
+
+      .onp-sl-connect-button {
+        left: 41px;
+      }
+
+      .setIconBgPosition(facebook, 11px, 7px, 32px, 32px);
+      .setIconBgPosition(twitter, -138px, 7px, 32px, 32px);
+      .setIconBgPosition(google, -24px, 8px, 32px, 32px);
+      .setIconBgPosition(linkedin, -64px, 7px, 32px, 32px);
+      .setIconBgPosition(vk, -177px, 8px, 32px, 32px);
+
+    }
+
+    /**
+      Mediums style
+    */
+    &.onp-sl-buttons-size-medium, &.onp-sl-buttons-size-small {
+
+      .onp-sl-button {
+        width: 135px;
+        height: 35px;
+        line-height: 1.5;
+      }
+      .onp-sl-icon {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        left: 6px;
+        background-image: url("../img/social-icons-x24.png");
+      }
+
+      .onp-sl-connect-button {
+        left: 41px;
+      }
+
+      .setIconBgPosition(facebook, -5px, -5px, 24px, 24px);
+      .setIconBgPosition(twitter, -107px, -5px, 24px, 24px);
+      .setIconBgPosition(google, -39px, -5px, 24px, 24px);
+      .setIconBgPosition(linkedin, -73px, -5px, 24px, 24px);
+      .setIconBgPosition(vk, -141px, -5px, 24px, 24px);
+    }
+
+    /**
+     Small style
+   */
+    &.onp-sl-buttons-size-small {
+      .onp-sl-button {
+        width: 36px;
+        padding: 0;
+        height: 35px;
+        line-height: 2.4;
+        overflow: hidden;
+        margin: 3px;
+        font-size: 0px;
+
+        .onp-sl-error-title {
+          font-size: 0px !important;
+          background: url(../img/close-white.png) 50% 50% no-repeat;
+        }
+      }
+
+    }
+
+    .web20SetButtonBgColor(facebook, #3f7dc0);
+    .web20SetButtonBgColor(twitter, #50b2ef);
+    .web20SetButtonBgColor(google, #d86657);
+    .web20SetButtonBgColor(linkedin, #0073b2);
+    .web20SetButtonBgColor(vk, #6385ad);
+
+  }
+}

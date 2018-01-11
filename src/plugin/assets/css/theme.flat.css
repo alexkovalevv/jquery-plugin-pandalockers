@@ -1,0 +1,386 @@
+/**
+ * Flat Style
+ * Copyright 2014, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['premium', 'full-premium']
+ */
+.onp-sl-flat {
+    padding: 0px;
+    background-color: transparent;
+}
+
+.onp-sl-flat .onp-sl-inner-wrap {
+    background-color: #f9f9f9;
+}
+
+.onp-sl-flat .onp-sl-outer-wrap {
+    border-bottom: 4px solid #f1f1f1;
+}
+
+.onp-sl-flat .onp-sl-inner-wrap,
+.onp-sl-flat .onp-sl-outer-wrap {
+    border-radius: 5px;
+}
+
+.onp-sl-flat .onp-sl-text .onp-sl-strong:before,
+.onp-sl-flat .onp-sl-text .onp-sl-strong:after {
+    content: " ";
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+    .onp-sl-flat .onp-sl-text .onp-sl-strong:before,
+    .onp-sl-flat .onp-sl-text .onp-sl-strong:after {
+        display: none;
+    }
+}
+
+.onp-sl-flat .onp-sl-text .onp-sl-strong:after {
+    margin-left: 10px;
+}
+
+/**
+ * Social Buttons
+*/
+.onp-sl-flat .onp-sl-social-buttons .fb-like span,
+.onp-sl-flat .onp-sl-social-buttons .fb-like iframe {
+    width: 118px !important;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-control {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-control-inner-wrap {
+    padding: 7px 10px 10px 10px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-control-inner-wrap,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-button-overlay {
+    height: 34px;
+    min-width: 118px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-overlay-front {
+    background: #eaeaea;
+    border-bottom: 3px solid #dadada;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-overlay-back {
+    border-radius: 3px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-state-error .onp-sl-overlay-front {
+    border-bottom-color: #900 !important;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-overlay-icon {
+    height: 34px;
+    width: 44px;
+    background-image: url("../img/social-icons.png");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    position: absolute;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-overlay-text {
+    font-size: 14px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    position: static;
+    padding-left: 42px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-front {
+    background: #4086cc;
+    border-bottom-color: #13579e;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-icon {
+    background-position: -132px 8px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-back {
+    background: #4086cc;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-header {
+    background: #13579e;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-front {
+    background: #3c5a9a;
+    border-bottom-color: #082b6f;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-icon {
+    background-position: 15px 9px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-back {
+    background: #3c5a9a;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-header {
+    background: #082b6f;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-front {
+    background: #ca4639;
+    border-bottom-color: #a52316;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-icon {
+    background-position: -18px 9px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-back {
+    background: #ca4639;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-header {
+    background: #a52316;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-linkedin .onp-sl-overlay-front {
+    background-color: #286b8d;
+    border-bottom-color: #19465d;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-linkedin .onp-sl-overlay-icon {
+    background-position: -58px 7px;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-linkedin .onp-sl-overlay-back {
+    background: #286b8d;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-linkedin .onp-sl-overlay-header {
+    background-color: #19465d;
+}
+
+.onp-sl-flat .onp-sl-google-youtube .onp-sl-control-inner-wrap,
+.onp-sl-flat .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap {
+    padding: 5px 10px;
+}
+
+.onp-sl-flat .onp-sl-google-youtube .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-youtube-subscribe .onp-sl-overlay-front {
+    background: #d8322e;
+    border-bottom-color: #af221f;
+}
+
+.onp-sl-flat .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-youtube-subscribe .onp-sl-overlay-icon {
+    background-position: -200px 8px;
+}
+
+.onp-sl-flat .onp-sl-google-youtube .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-youtube-subscribe .onp-sl-overlay-back {
+    background: #d8322e;
+}
+
+.onp-sl-flat .onp-sl-google-youtube .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-youtube-subscribe .onp-sl-overlay-header {
+    background-color: #af221f;
+}
+
+/**
+ * Connect Buttons
+*/
+.onp-sl-flat .onp-sl-connect-buttons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-control {
+
+    cursor: pointer;
+
+    background: #eaeaea;
+    border-bottom: 4px solid #dadada;
+    border-radius: 4px;
+    color: #fff;
+
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 170px;
+    height: 55px;
+    padding: 9px 10px 5px 15px;
+    margin: 7px;
+
+    position: relative;
+    box-shadow: none;
+
+    font-size: 13px;
+    line-height: 135%;
+    text-align: left;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-control .onp-sl-name {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Icon */
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-control .onp-sl-icon {
+    height: 55px;
+    width: 50px;
+    background-image: url("../img/social-icons-large.png");
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    position: absolute;
+
+    top: 2px;
+    right: 5px;
+
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-facebook .onp-sl-icon {
+    background-position: 2px 0;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-twitter .onp-sl-icon {
+    background-position: -51px -1px;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-google .onp-sl-icon {
+    background-position: -100px 0;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-linkedin .onp-sl-icon {
+    background-position: -60px 10px;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-facebook {
+    background: #3c5a9a;
+    border-bottom-color: #082b6f;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-twitter {
+    background: #4086cc;
+    border-bottom-color: #13579e;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-google {
+    background: #ca4639;
+    border-bottom-color: #a52316;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-linkedin {
+    background-color: #286b8d;
+    border-bottom-color: #19465d;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-facebook:hover {
+    background: #4263a9;
+    border-bottom-color: #093282;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-twitter:hover {
+    background: #448fd9;
+    border-bottom-color: #155fac;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-google:hover {
+    background: #da4c3e;
+    border-bottom-color: #b22618;
+}
+
+.onp-sl-flat .onp-sl-connect-buttons .onp-sl-linkedin:hover {
+    background-color: #4682a0;
+    border-bottom-color: #3b6377;
+}
+
+/**
+* Subscription
+*/
+.onp-sl-flat.onp-sl-subscription-enabled .onp-sl-inner-wrap {
+    padding-bottom: 10px;
+}
+
+.onp-sl-flat .onp-sl-subscription {
+    padding: 0px;
+}
+
+.onp-sl-flat .onp-sl-subscription .onp-sl-control {
+    padding-bottom: 0px;
+    max-width: 270px;
+}
+
+.onp-sl-flat .onp-sl-subscription .onp-sl-field {
+    margin-bottom: 8px;
+}
+
+.onp-sl-flat .onp-sl-subscription .onp-sl-control .onp-sl-input {
+    border: 0px;
+    border-radius: 3px;
+    height: 45px;
+    font-size: 16px;
+    padding: 14px 14px 10px 14px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+    text-align: center;
+}
+
+.onp-sl-flat .onp-sl-subscription .onp-sl-control .onp-sl-submit {
+    height: 49px;
+    padding: 0 14px;
+    line-height: 49px;
+    background-color: #566067;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+
+    border-bottom: 3px solid #3b4348;
+    border-radius: 3px;
+}
+
+.onp-sl-flat .onp-sl-subscription .onp-sl-control .onp-sl-submit:hover {
+    background-color: #4e575d;
+}
+
+.onp-sl-flat .onp-sl-subscription .onp-sl-hiding-link-container {
+    border-top: 2px dashed #efefef;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.onp-sl-flat .onp-sl-hiding-link-separator .onp-sl-title {
+    border-bottom: 1px dashed #111;
+}
+
+.onp-sl-flat .onp-sl-hiding-link-separator .onp-sl-title:hover {
+    border-bottom: none;
+}

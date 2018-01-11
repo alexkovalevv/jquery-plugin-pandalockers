@@ -1,0 +1,147 @@
+/**
+ * Dandyish Style
+ * Copyright 2014, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['premium', 'full-premium']
+ */
+.onp-sl-dandyish {
+    padding: 7px;
+    background: url("../img/dandysh-border.png");
+    border-radius: 12px;
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.onp-sl-dandyish .onp-sl-outer-wrap {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.onp-sl-dandyish .onp-sl-inner-wrap {
+    padding: 15px 10px 20px 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    background: linear-gradient(top, #f9f9f9, #F5F5F5);
+    background: -o-linear-gradient(top, #f9f9f9, #F5F5F5);
+    background: -moz-linear-gradient(top, #f9f9f9, #F5F5F5);
+    background: -webkit-linear-gradient(top, #f9f9f9, #F5F5F5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#F5F5F5', GradientType=0);
+    background: -ms-linear-gradient(top, #FFFFFF, #F5F5F5);
+    -moz-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.20);
+    -webkit-box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.20);
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.20);
+}
+
+.onp-sl-dandyish .onp-sl-text {
+    padding: 10px 10px 0 10px;
+}
+
+.onp-sl-dandyish .onp-sl-text,
+.onp-sl-dandyish .onp-sl-timer,
+.onp-sl-dandyish .onp-sl-timer * {
+    -webkit-text-shadow: 1px 1px 2px #fff;
+    -moz-text-shadow: 1px 1px 2px #fff;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.onp-sl-dandyish .onp-sl-text .onp-sl-strong:before,
+.onp-sl-dandyish .onp-sl-text .onp-sl-strong:after {
+    content: " ";
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+    .onp-sl-dandyish .onp-sl-text .onp-sl-strong:before,
+    .onp-sl-dandyish .onp-sl-text .onp-sl-strong:after {
+        display: none;
+    }
+}
+
+.onp-sl-dandyish .onp-sl-text .onp-sl-strong:after {
+    margin-left: 10px;
+}
+
+.onp-sl-dandyish .onp-sl-cross {
+    top: 18px;
+    right: 18px;
+}
+
+.onp-sl-dandyish .onp-sl-timer {
+    right: 18px;
+    bottom: 18px;
+}
+
+.onp-sl-dandyish .onp-sl-state-loading .onp-sl-control-inner-wrap {
+    background-image: url("../img/button-loader-ffffff.gif");
+}
+
+/*!
+ * Dandyish Style, Connect Buttons
+ * Copyright 2014, OnePress, http://byonepress.com
+*/
+.onp-sl-dandyish .onp-sl-social-buttons {
+    margin: 0px;
+    padding: 5px;
+}
+
+.onp-sl-dandyish .onp-sl-control {
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.onp-sl-dandyish .onp-sl-control .fb-like span,
+.onp-sl-dandyish .onp-sl-control .fb-like iframe {
+    height: 61px;
+}
+
+.onp-sl-dandyish .onp-sl-control {
+    margin: 14px 7px 0 7px;
+    min-width: 85px;
+    max-width: 125px;
+}
+
+.onp-sl.onp-sl-dandyish .onp-sl-social-button {
+    position: static;
+    min-width: 0px;
+    width: auto;
+}
+
+.onp-sl-dandyish .onp-linkedin-button {
+    position: relative;
+}
+
+.onp-sl-dandyish .onp-google-button {
+    position: relative;
+    top: 2px;
+}
+
+.onp-sl-dandyish .onp-facebook-button,
+.onp-sl-dandyish .onp-google-button,
+.onp-sl-dandyish .onp-twitter-tweet {
+    width: auto;
+}
+
+.onp-sl-dandyish .fb-like {
+    position: top;
+    top: 1px;
+}
+
+.onp-sl-dandyish .onp-sl-control-inner-wrap {
+    min-width: 85px;
+    height: 84px;
+    padding: 10px;
+    text-align: center;
+}

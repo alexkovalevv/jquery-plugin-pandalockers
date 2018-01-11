@@ -1,0 +1,42 @@
+.backgroundGradient(@startColor, @endColor) {
+  background: @startColor;
+  background: -moz-linear-gradient(top, @startColor 0%, @endColor 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @startColor), color-stop(100%, @endColor));
+  background: -webkit-linear-gradient(top, @startColor 0%, @endColor 100%);
+  background: -o-linear-gradient(top, @startColor 0%, @endColor 100%);
+  background: -ms-linear-gradient(top, @startColor 0%, @endColor 100%);
+  background: linear-gradient(to bottom, @startColor 0%, @endColor 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{startColor}', endColorstr='@{endColor}', GradientType=0);
+}
+
+.setFlipButtonGradient(@startColor, @endColor, @posX, @posY) {
+  .onp-sl-overlay-front {
+    .backgroundGradient(@startColor, @endColor);
+  }
+  .onp-sl-overlay-icon {
+    background-position: @posX @posY;
+  }
+  .onp-sl-overlay-back {
+    background: @startColor;
+  }
+  .onp-sl-overlay-header {
+    background-color: darken(@startColor, 10%);
+  }
+}
+
+.setFlipButtonBackground(@bgColor, @posX, @posY) {
+  .onp-sl-overlay-front {
+    background-color: @bgColor;
+    border-bottom-color: darken(@bgColor, 10%);
+  }
+  .onp-sl-overlay-icon {
+    background-position: @posX @posY;
+  }
+  .onp-sl-overlay-back {
+    background: @bgColor;
+  }
+  .onp-sl-overlay-header {
+    background-color: darken(@bgColor, 10%);
+  }
+}
+

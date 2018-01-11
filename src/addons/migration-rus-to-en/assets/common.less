@@ -1,0 +1,198 @@
+/**
+ * Общие стили для миграции
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 01.06.2017
+ *
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['migration-rus-to-en']
+ */
+
+.onp-sl {
+  /* --------------------------------
+  /* Общие
+  /* -------------------------------*/
+
+  .onp-sl-non-default-screen {
+    padding: 15px;
+  }
+
+  /* --------------------------------
+  /* Блоки и ссылки ошибок
+  /* -------------------------------*/
+
+  .onp-sl .onp-sl-group-error a,
+  .onp-sl-locker-error a {
+    color: #FFEB3B;
+    text-decoration: underline;
+  }
+
+  /* --------------------------------
+  /* ЭКРАН ВОПРОС
+  /* -------------------------------*/
+  .onp-sl-screen {
+    .onp-sl-prompt {
+      text-align: left;
+      color: #170000;
+      padding: 0 10px;
+      /*margin-top: 15px;*/
+      font-size: 14px;
+    }
+
+    .onp-sl-prompt strong {
+      display: block;
+      text-align: center;
+      font-size: 120%;
+      margin: 10px 0 5px;
+    }
+
+    .onp-sl-prompt-buttons {
+      text-align: center;
+    }
+
+    .onp-sl-prompt-button-yes, .onp-sl-prompt-button-no {
+      position: relative;
+      line-height: 18px;
+      padding: 9px 12px 6px 12px;
+      margin: 10px 10px 0 0;
+      border-radius: 3px;
+      font-size: 13px;
+      font-weight: lighter;
+      text-transform: none;
+      border: 0;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      cursor: pointer;
+
+    }
+
+    .onp-sl-prompt-button-yes {
+      background: #ffe16c;
+      border-bottom: 3px solid #f0cc41;
+      color: #382f0e;
+    }
+
+    .onp-sl-prompt-button-no {
+      background: #e5e5e5;
+      border-bottom: 3px solid #c6c6c6;
+      color: #382f0e;
+    }
+
+    .onp-sl-prompt-button-yes:hover {
+      background: #ffdb4d;
+    }
+
+    .onp-sl-prompt-button-no:hover {
+      background: #dbd9d9;
+    }
+  }
+
+  /* --------------------------------
+  /* Кнопки
+  /* -------------------------------*/
+
+  .onp-sl-social-buttons {
+    .onp-sl-control {
+      text-align: center;
+    }
+    .onp-sl-iframe-button {
+      max-width: 210px;
+      width: auto;
+      line-height: 0;
+      text-align: center;
+
+      iframe {
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: none !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+        max-width: none !important;
+        max-height: none !important;
+        width: auto;
+        height: auto;
+      }
+
+      .onp-sl-button-overlay {
+        text-decoration: none !important;
+      }
+    }
+
+    &.onp-sl-horizontal.onp-sl-has-counters.onp-sl-lang-ru_RU {
+      .onp-sl-social-button-facebook-like, .onp-sl-social-button-facebook-share {
+        width: auto !important;
+      }
+
+      .onp-sl-social-button-google-plus {
+        text-align: center;
+
+        /* fix for child div inline */
+        & > div[id^="___plusone_"] {
+          display: inline-block !important;
+          width: 60px !important;
+        }
+      }
+    }
+  }
+
+  &.onp-sl-dandyish {
+    .onp-sl-social-buttons {
+      .onp-sl-lang-ru_RU {
+        .onp-sl-social-button-google-plus, .onp-sl-social-button-google-plus div[id^="___plusone_"] {
+          width: 60px !important;
+        }
+        .onp-sl-social-button-google-share {
+          width: 90px !important;
+        }
+      }
+      .onp-sl-iframe-button {
+        &.onp-sl-social-button-facebook-like, &.onp-sl-social-button-facebook-share {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  &.onp-sl-secrets, &.onp-sl-flat {
+    .onp-sl-horizontal.onp-sl-lang-ru_RU {
+      .onp-sl-control {
+        min-width: 145px;
+      }
+    }
+  }
+
+  &.onp-sl-glass, &.onp-sl-starter {
+    .onp-sl-horizontal.onp-sl-lang-ru_RU {
+      .onp-sl-twitter-tweet {
+        .onp-sl-social-button {
+          display: inline-block;
+          width: 80px !important;
+        }
+      }
+      .onp-sl-twitter-follow {
+        .onp-sl-social-button {
+          //width: 78px !important;
+        }
+      }
+      .onp-sl-google-plus {
+        .onp-sl-social-button {
+          width: 60px !important;
+        }
+        &, .onp-sl-control-inner-wrap {
+          min-width: 60px;
+        }
+      }
+    }
+  }
+}
+

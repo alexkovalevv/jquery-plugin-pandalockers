@@ -1,0 +1,132 @@
+/**
+ * Theme glasscase
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 28.04.2017
+
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['popup-mode']
+ */
+
+.onp-sl-overlap-box.onp-sl-glasscase-theme {
+  &.onp-sl-blurring-mode {
+    .onp-sl-overlap-background {
+      opacity: 0.6;
+    }
+  }
+  .onp-sl-overlap-background {
+    background-repeat: repeat;
+  }
+  .onp-sl-overlap-background.onp-sl-lockers-texture {
+    background-image: url('../img/lock-content-img.png');
+  }
+
+  .onp-sl-overlap-background.onp-sl-discounts-texture {
+    background-image: url('../img/906741-town-wallpaper.png');
+  }
+}
+
+.onp-sl.onp-sl-glasscase {
+  background: rgba(249, 249, 249, 0.78); //url('../img/906741-town-wallpaper.png') no-repeat;
+  //box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border: 10px solid #fff;
+
+  .onp-sl-text {
+    padding: 10px 20px;
+    font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-shadow: none;
+    &, p {
+      color: #504e4e;
+      font-size: 15px;
+    }
+
+    .onp-sl-strong {
+      font-size: 30px;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+  }
+
+  /*.onp-sl-group {
+    padding: 0;
+  }*/
+
+  .onp-sl-group-notice {
+    background-color: rgba(255, 193, 7, 0.27);
+    color: #988447 !important;
+  }
+
+  .onp-sl-error-title {
+    background-color: rgb(181, 55, 55) !important;
+  }
+
+  .onp-sl-group-error, .onp-sl-locker-error {
+    background-color: rgba(210, 19, 19, 0.48) !important;
+  }
+  .onp-sl-social-buttons {
+    .onp-sl-state-error.onp-sl-control {
+      .onp-sl-overlay-front, .onp-sl-overlay-header, .onp-sl-overlay-back {
+        background-color: rgb(181, 55, 55) !important;
+      }
+    }
+
+    // Flip buttons
+    .onp-sl-control {
+      background: rgba(0, 0, 0, .05);
+      border: 6px solid rgba(255, 255, 255, .09);
+    }
+  }
+
+  .onp-sl-connect-buttons {
+    &.onp-sl-connect-buttons-style-great-attractor {
+      .onp-sl-state-loading,
+      .onp-sl-state-error {
+        background-color: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .3);
+        box-shadow: none !important;
+        &:hover {
+          box-shadow: none;
+          background-color: rgba(255, 255, 255, .1);
+        }
+      }
+      .onp-sl-state-loading .onp-sl-control-inner-wrap {
+        background-image: url("../img/button-loader-e4e4e4.gif") !important;
+      }
+    }
+
+    &.onp-sl-connect-buttons-style-dark-force {
+      .onp-sl-button {
+        background-color: rgba(222, 222, 222, .8);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .1), inset 0 1px 0 rgba(0, 0, 0, .1);
+
+        &.onp-sl-state-loading,
+        &.onp-sl-state-error {
+          background-color: rgba(222, 222, 222, .8) !important;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, .1), inset 0 1px 0 rgba(0, 0, 0, .1) !important;
+        }
+      }
+      .onp-sl-state-loading .onp-sl-control-inner-wrap {
+        background-image: url("../img/button-loader-e4e4e4.gif") !important;
+      }
+    }
+  }
+
+  .onp-sl-subscription {
+    .onp-sl-input {
+      background: rgba(219, 219, 219, 0.57);
+      border: 2px solid #504d4d;
+    }
+    .onp-sl-button {
+      background-color: #565656;
+      color: #e0e0e0;
+      &.load:before {
+        background: url('../img/button-loader-565656.gif');
+      }
+    }
+  }
+
+}

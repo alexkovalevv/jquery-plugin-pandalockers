@@ -1,0 +1,1663 @@
+/**
+ * Общие настройки тем
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 12.05.2017 
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!autoprefixer:true
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['popup-mode']
+ */
+.onp-sl .onp-sl-group {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-strong:before,
+.onp-sl.onp-sl-download .onp-sl-strong:before,
+.onp-sl.onp-sl-facebook .onp-sl-strong:before,
+.onp-sl.onp-sl-gifts .onp-sl-strong:before,
+.onp-sl.onp-sl-glasscase .onp-sl-strong:before,
+.onp-sl.onp-sl-darkness .onp-sl-strong:after,
+.onp-sl.onp-sl-download .onp-sl-strong:after,
+.onp-sl.onp-sl-facebook .onp-sl-strong:after,
+.onp-sl.onp-sl-gifts .onp-sl-strong:after,
+.onp-sl.onp-sl-glasscase .onp-sl-strong:after {
+  display: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control {
+  background: rgba(0, 0, 0, 0.05);
+  border: 6px solid rgba(255, 255, 255, 0.09);
+  max-width: 200px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-social-button,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-social-button,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-social-button,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-social-button,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-social-button {
+  min-width: 130px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-button-overlay,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-button-overlay,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-button-overlay,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-button-overlay,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-button-overlay {
+  height: 34px;
+  min-width: 150px;
+  text-decoration: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-control-inner-wrap {
+  padding: 7px;
+  -moz-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-front {
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.25);
+  position: relative;
+  background: #f7f7f7;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-icon {
+  height: 34px;
+  width: 44px;
+  background: url("../img/social-icons.png") -1000px 50% no-repeat;
+  position: absolute;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-line,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-line,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-line,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-line,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-line {
+  position: absolute;
+  left: 41px;
+  top: 7px;
+  height: 21px;
+  width: 0px;
+  border-left: 1px solid rgba(0, 0, 0, 0.11);
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-text,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-text,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-text,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-text,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-text {
+  font-size: 14px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 34px;
+  color: #fff;
+  text-align: center;
+  position: static;
+  padding-left: 42px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-back {
+  background: #eaeaea;
+  border: 0;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-control .onp-sl-overlay-header {
+  background: #eaeaea;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-share-overlay,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-share-overlay,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-share-overlay,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-share-overlay,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-share-overlay,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-feature-overlay,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-feature-overlay,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-feature-overlay,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-feature-overlay,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-feature-overlay,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay {
+  opacity: 0 !important;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-share-overlay:hover,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-share-overlay:hover,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-share-overlay:hover,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-share-overlay:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-share-overlay:hover,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-feature-overlay:hover,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-feature-overlay:hover,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-feature-overlay:hover,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-feature-overlay:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-feature-overlay:hover,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay:hover,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay:hover,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay:hover,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe-overlay:hover {
+  opacity: 0 !important;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-front {
+  background: #00bfee;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-icon {
+  background-position: -132px 8px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-back {
+  background: #24b1e5;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-twitter .onp-sl-overlay-header {
+  background: #368acd;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-front {
+  background: #5581bc;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-icon {
+  background-position: 15px 9px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-back {
+  background: #46629e;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-facebook-share .onp-sl-overlay-header {
+  background-color: #314775;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-front {
+  background: #5c5c5c;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-icon {
+  background-position: -18px 9px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-back {
+  background: #494647;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-plus .onp-sl-overlay-header {
+  background-color: #111111;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-front {
+  background: #0076a3;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-icon {
+  background-position: -58px 8px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-back {
+  background: #286b8d;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-linkedin-share .onp-sl-overlay-header {
+  background-color: #19465d;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-control-inner-wrap {
+  padding: 5px 7px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-front,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-front {
+  background: #e85858;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-icon {
+  background-position: -207px 8px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-back,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-back {
+  background: #E85858;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-google-youtube .onp-sl-overlay-header,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-youtube-subscribe .onp-sl-overlay-header {
+  background-color: #C8231A;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-front {
+  background: #64a0bc;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon {
+  background-position: -171px 9px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-icon {
+  background-position: -171px 9px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-back {
+  background: #64a0bc;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-vk-like .onp-sl-overlay-header {
+  background-color: #4a6887;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-front {
+  background: #fe8c19;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-icon {
+  background-position: -95px 7px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-back {
+  background: #ea7e12;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-ok-share .onp-sl-overlay-header {
+  background-color: #d37210;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-front,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-front,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-front,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-front {
+  background: #2d7cbb;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-icon,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-icon,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-icon,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-icon {
+  background-position: -238px 7px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-back,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-back,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-back,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-back,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-back {
+  background: #1964A6;
+}
+.onp-sl.onp-sl-darkness .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-header,
+.onp-sl.onp-sl-download .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-header,
+.onp-sl.onp-sl-facebook .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-header,
+.onp-sl.onp-sl-glasscase .onp-sl-social-buttons .onp-sl-mail .onp-sl-overlay-header {
+  background-color: #0E406C;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force {
+  /**
+      Big style
+    */
+  /**
+      Mediums style
+    */
+  /**
+      Small style
+    */
+  /* :: As First Group :: */
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button {
+  line-height: 3.3;
+  border: 0px;
+  background-color: rgba(23, 23, 23, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 1px 0 rgba(0, 0, 0, 0.2);
+  color: #59d2ff;
+  text-shadow: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button:hover {
+  color: #019cd5;
+  background-color: rgba(3, 31, 52, 0.42);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.16), inset 0 1px 0 rgba(0, 0, 0, 0.22);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-loading,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-loading,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-loading,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-loading,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-loading,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-error,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-error,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-error,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-error,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-button.onp-sl-state-error {
+  border: 0px !important;
+  background-color: rgba(23, 23, 23, 0.2) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 1px 0 rgba(0, 0, 0, 0.2) !important;
+  color: #59d2ff !important;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-state-loading .onp-sl-control-inner-wrap {
+  background-image: url("../img/button-loader-232323.gif");
+  background-repeat: no-repeat;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-short,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-short,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-short,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-short,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-short {
+  display: block;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-long,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-long,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-long,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-long,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-long {
+  display: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-connect-button {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-icon {
+  width: 32px;
+  height: 32px;
+  top: 9px;
+  left: 9px;
+  background-image: url("../img/social-icons.png");
+  background-position-y: 50%;
+  background-color: #172c3a;
+  position: absolute;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  background-repeat: no-repeat;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-button {
+  width: 170px;
+  height: 50px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-connect-button {
+  left: 41px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon {
+  background-position: 11px 7px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon {
+  background-position: -138px 7px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon {
+  background-position: -24px 8px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon {
+  background-position: -64px 7px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon {
+  background-position: -177px 8px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button {
+  width: 135px;
+  height: 35px;
+  line-height: 2.4;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-icon {
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  left: 6px;
+  background-image: url("../img/social-icons-x24.png");
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-connect-button {
+  left: 41px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon {
+  background-position: -5px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon {
+  background-position: -107px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon {
+  background-position: -39px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon {
+  background-position: -73px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon {
+  background-position: -141px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button {
+  width: 37px;
+  height: 35px;
+  line-height: 2.4;
+  overflow: hidden;
+  margin: 3px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title {
+  font-size: 0px !important;
+  background: url(../img/close-white.png) 50% 50% no-repeat;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon {
+  background-color: #5987c2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-facebook .onp-sl-icon {
+  background-color: #5987c2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon {
+  background-color: #42c9f9;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-twitter .onp-sl-icon {
+  background-color: #42c9f9;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon {
+  background-color: #dd4b39;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-google .onp-sl-icon {
+  background-color: #dd4b39;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon {
+  background-color: #0073b2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-linkedin .onp-sl-icon {
+  background-color: #0073b2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon {
+  background-color: #567CA4;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force .onp-sl-vk .onp-sl-icon {
+  background-color: #567CA4;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-button {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  text-align: left;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-icon {
+  border-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 1px 0 rgba(0, 0, 0, 0.13);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-connect-button {
+  position: absolute;
+  left: 52px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook {
+  background-color: #5987c2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-facebook:hover {
+  background-color: #6c94c9;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter {
+  background-color: #42c9f9;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-twitter:hover {
+  background-color: #5bd0fa;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google {
+  background-color: #dd4b39;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-google:hover {
+  background-color: #e15f4f;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin {
+  background-color: #0073b2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-linkedin:hover {
+  background-color: #0083cb;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk {
+  background-color: #567CA4;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-dark-force.onp-sl-first-group .onp-sl-vk:hover {
+  background-color: #6589ae;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 {
+  /**
+     Big style
+   */
+  /**
+      Mediums style
+    */
+  /**
+     Small style
+   */
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control {
+  font-family: "Segoe UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control:active,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control:active,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control:active,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control:active,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control:active {
+  position: relative;
+  top: 1px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-error,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-error,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-error,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-error,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-error {
+  border: 0px !important;
+  background: none !important;
+  background-color: rgba(23, 23, 23, 0.2) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 1px 0 rgba(0, 0, 0, 0.2) !important;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading .onp-sl-control-inner-wrap,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control.onp-sl-state-loading .onp-sl-control-inner-wrap {
+  background-image: url("../img/button-loader-232323.gif");
+  background-repeat: no-repeat;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-control .onp-sl-icon {
+  position: absolute;
+  border-radius: 100px;
+  box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.33);
+  width: 32px;
+  height: 32px;
+  top: 9px;
+  left: 9px;
+  background-image: url("../img/social-icons.png");
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-button {
+  width: 170px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 2.1;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-connect-button {
+  left: 41px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-facebook .onp-sl-icon {
+  background-position: 11px 7px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-twitter .onp-sl-icon {
+  background-position: -138px 7px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-google .onp-sl-icon {
+  background-position: -24px 8px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-linkedin .onp-sl-icon {
+  background-position: -64px 7px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-big .onp-sl-vk .onp-sl-icon {
+  background-position: -177px 8px;
+  width: 32px;
+  height: 32px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-button,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button {
+  width: 135px;
+  height: 35px;
+  line-height: 1.5;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-icon {
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  left: 6px;
+  background-image: url("../img/social-icons-x24.png");
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-connect-button,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-connect-button {
+  left: 41px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-facebook .onp-sl-icon {
+  background-position: -5px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-twitter .onp-sl-icon {
+  background-position: -107px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-google .onp-sl-icon {
+  background-position: -39px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-linkedin .onp-sl-icon {
+  background-position: -73px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-medium .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-vk .onp-sl-icon {
+  background-position: -141px -5px;
+  width: 24px;
+  height: 24px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button {
+  width: 36px;
+  padding: 0;
+  height: 35px;
+  line-height: 2.4;
+  overflow: hidden;
+  margin: 3px;
+  font-size: 0px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20.onp-sl-buttons-size-small .onp-sl-button .onp-sl-error-title {
+  font-size: 0px !important;
+  background: url(../img/close-white.png) 50% 50% no-repeat;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook {
+  background: #3f7dc0;
+  background: linear-gradient(to bottom, #79a4d3 1%, #3f7dc0 6%, #2c5886 75%, #3971ad);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f7dc0', endColorstr='#3971ad', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover {
+  background: linear-gradient(to bottom, #79a4d3 1%, #3f7dc0 6%, #2c5886 75%, #2c5886);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f7dc0', endColorstr='@{@bgColorDarken15}', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook:hover .onp-sl-icon {
+  background-color: #203f60;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-facebook .onp-sl-icon {
+  background-color: #2c5886;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter {
+  background: #50b2ef;
+  background: linear-gradient(to bottom, #96d1f5 1%, #50b2ef 6%, #1491de 75%, #39a8ed);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#50b2ef', endColorstr='#39a8ed', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover {
+  background: linear-gradient(to bottom, #96d1f5 1%, #50b2ef 6%, #1491de 75%, #1491de);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#50b2ef', endColorstr='@{@bgColorDarken15}', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter:hover .onp-sl-icon {
+  background-color: #1072af;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-twitter .onp-sl-icon {
+  background-color: #1491de;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google {
+  background: #d86657;
+  background: linear-gradient(to bottom, #e69f95 1%, #d86657 6%, #b83b2b 75%, #d35342);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d86657', endColorstr='#d35342', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover {
+  background: linear-gradient(to bottom, #e69f95 1%, #d86657 6%, #b83b2b 75%, #b83b2b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d86657', endColorstr='@{@bgColorDarken15}', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google:hover .onp-sl-icon {
+  background-color: #8e2e21;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-google .onp-sl-icon {
+  background-color: #b83b2b;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin {
+  background: #0073b2;
+  background: linear-gradient(to bottom, #00a4ff 1%, #0073b2 6%, #004266 75%, #006399);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0073b2', endColorstr='#006399', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover {
+  background: linear-gradient(to bottom, #00a4ff 1%, #0073b2 6%, #004266 75%, #004266);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0073b2', endColorstr='@{@bgColorDarken15}', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin:hover .onp-sl-icon {
+  background-color: #002132;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-linkedin .onp-sl-icon {
+  background-color: #004266;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk {
+  background: #6385ad;
+  background: linear-gradient(to bottom, #95acc7 1%, #6385ad 6%, #435f80 75%, #5578a2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6385ad', endColorstr='#5578a2', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover {
+  background: linear-gradient(to bottom, #95acc7 1%, #6385ad 6%, #435f80 75%, #435f80);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6385ad', endColorstr='@{@bgColorDarken15}', GradientType=0);
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk:hover .onp-sl-icon {
+  background-color: #32465f;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-web20 .onp-sl-vk .onp-sl-icon {
+  background-color: #435f80;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor {
+  /* :: Buttons, Icon :: */
+  /* :: As First Group :: */
+  /*&.onp-sl-first-group {
+      padding-bottom: 0px;
+    }*/
+  /* :: As Last Group :: */
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button {
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 0px;
+  border: 0px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.03);
+  color: #111;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
+  background-color: transparent;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-short,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-short,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-short,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-short,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-short {
+  display: inline;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-long,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-long,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-long,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-long,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-long {
+  display: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-icon {
+  width: 40px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-button:hover .onp-sl-connect-button {
+  left: 40px;
+  background: #f9f9f9;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-connect-button {
+  text-align: left;
+  padding-left: 15px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  right: 0px;
+  bottom: 0px;
+  font-size: 13px;
+  line-height: 50px;
+  font-weight: normal;
+  background: #f0f0f0;
+  border: 1px solid #c9c9c9;
+  border-left: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  white-space: nowrap;
+  background: -moz-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f6f6f6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fdfdfd 0%, #f6f6f6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f6f6f6', GradientType=0);
+  /* IE6-9 */
+  -webkit-transition: left .3s;
+  transition: left .3s;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error {
+  background: #fff;
+  box-shadow: none;
+  border: 1px solid #f2f2f2;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-loading:hover,
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error:hover,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error:hover,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error:hover,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error:hover,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-state-error:hover {
+  box-shadow: none;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-icon {
+  width: 5px;
+  background-image: url("../img/social-icons.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-facebook .onp-sl-icon {
+  background-position: 15px 15px;
+  background-color: #989de1;
+  border: 1px solid #7e85e1;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-twitter .onp-sl-icon {
+  background-position: -133px 16px;
+  background-color: #55acee;
+  border: 1px solid #2b9aee;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-google .onp-sl-icon {
+  background-position: -18px 16px;
+  background-color: #f47665;
+  border: 1px solid #f45944;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-linkedin .onp-sl-icon {
+  background-position: -60px 15px;
+  background-color: #0077b5;
+  border: 1px solid #036a9e;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor .onp-sl-vk .onp-sl-icon {
+  background-position: -172px 16px;
+  background-color: #6287AE;
+  border: 1px solid #036a9e;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group {
+  padding-top: 0px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-control,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-control,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-control,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-control,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-control {
+  width: 140px;
+  height: 40px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-icon {
+  height: 40px;
+  width: 5px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-facebook .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-facebook .onp-sl-icon {
+  background-position: 15px 10px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-twitter .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-twitter .onp-sl-icon {
+  background-position: -133px 10px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-google .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-google .onp-sl-icon {
+  background-position: -18px 11px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-linkedin .onp-sl-icon {
+  background-position: -60px 10px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-vk .onp-sl-icon,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-vk .onp-sl-icon {
+  background-position: -172px 10px;
+}
+.onp-sl.onp-sl-darkness .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-connect-button,
+.onp-sl.onp-sl-download .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-connect-button,
+.onp-sl.onp-sl-facebook .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-connect-button,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-connect-button,
+.onp-sl.onp-sl-glasscase .onp-sl-connect-buttons.onp-sl-connect-buttons-style-great-attractor.onp-sl-last-group .onp-sl-connect-button {
+  line-height: 40px;
+}

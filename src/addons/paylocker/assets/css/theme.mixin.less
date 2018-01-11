@@ -1,0 +1,184 @@
+/* ----------------------------------
+ *  Media queries
+ *-----------------------------------*/
+.media(@screen, @rules) {
+  @mobile-area: 416px;
+  @tablet-area: 750px;
+  @desktop-area: 970px;
+
+  & when (@screen = mobile) {
+    @media (max-width: @mobile-area) {
+      @rules();
+    }
+  }
+
+  & when (@screen = tablet) {
+    @media (min-width: @tablet-area) {
+      @rules();
+    }
+  }
+
+  & when (@screen = desktop) {
+    @media (min-width: @desktop-area) {
+      @rules();
+    }
+  }
+}
+
+/* ----------------------------------
+ *  Buttons color
+ *-----------------------------------*/
+.button-default-color(@btn-color) {
+  background-color: @btn-color;
+  .invertColor(color, @btn-color, 50%);
+  //border-bottom: 3px solid darken(@btn-color, 8%);
+  &:hover, &:active, &:focus {
+    @new-btn-color: darken(@btn-color, 5%);
+    .invertColor(background-color, @new-btn-color, 12%);
+    .invertColor(color, @new-btn-color, 50%);
+    .invertColor(border-color, @new-btn-color, 12%);
+  }
+}
+
+/* ----------------------------------
+ *  Table styles
+ *-----------------------------------*/
+.table-styles() {
+  .onp-pl-control-table {
+    &.onp-pl-subscribe {
+      background-color: @-subscribe-table-body-bg-color;
+      color: @-subscribe-table-text-color;
+      .onp-pl-ctable-header {
+        color: @-subscribe-table-header-text-color;
+        background: @-subscribe-table-header-bg-color data-uri("../img/premium-icon.png") 15px center no-repeat;
+      }
+      .onp-pl-ctable-price {
+        color: @-subscribe-table-price-color;
+      }
+
+      .onp-pl-ctable-description {
+        .onp-pl-control-table-row {
+          &:nth-child(1n) {
+            background-color: darken(@-subscribe-table-body-bg-color, 1%);
+          }
+          &:nth-child(2n) {
+            background-color: darken(@-subscribe-table-body-bg-color, 3%);
+          }
+        }
+      }
+    }
+
+    &.onp-pl-purchase {
+      background-color: @-buy-table-body-bg-color;
+      color: @-buy-table-text-color;
+      .onp-pl-ctable-header {
+        color: @-buy-table-header-text-color;
+        background: @-buy-table-header-bg-color data-uri("../img/shopping-basket-button.png") 15px center no-repeat;
+      }
+      .onp-pl-ctable-price {
+        color: @-buy-table-price-color;
+      }
+
+      .onp-pl-ctable-description {
+        .onp-pl-control-table-row {
+          &:nth-child(1n) {
+            background-color: darken(@-buy-table-body-bg-color, 1%);
+          }
+          &:nth-child(2n) {
+            background-color: darken(@-buy-table-body-bg-color, 3%);
+          }
+        }
+      }
+    }
+
+    .onp-pl-ctable-button {
+      &.subscribe {
+        .button-default-color(@-subscribe-table-button-bg-color);
+      }
+      &.purchase {
+        .button-default-color(@-buy-table-button-bg-color);
+      }
+    }
+  }
+}
+
+/* ----------------------------------
+ *  Themes color schema
+ *-----------------------------------*/
+.theme-styles() {
+  background-color: @theme-body-bg-color;
+
+  .onp-pl-help-link {
+    color: #969696;
+    background-image: @-header-help-icon;
+  }
+
+  .onp-sl-header {
+    background: @theme-header-bg-color;
+    color: @-header-text-color;
+    border-color: @-header-subline-color;
+  }
+
+  .onp-sl-message, .onp-sl-text p {
+    color: @-body-text-color;
+  }
+
+  .onp-pl-control-separator {
+    color: lighten(@-body-text-color, 30%);
+  }
+
+  .onp-pl-bottom-panel {
+    background: @theme-footer-bg-color;
+    a {
+      color: @-footer-links-color;
+      border-bottom: 1px dashed @-footer-links-color;
+    }
+  }
+  .onp-sl-screen {
+    a {
+      color: @-body-links-color;
+    }
+
+    .onp-pm-screen-text, .onp-pl-screen-text, .onp-sl-prompt-text {
+      &, p {
+        color: @-body-text-color;
+      }
+    }
+
+    &.onp-sl-screen-paylocker-payment-form, &.onp-sl-screen-paylocker-payment-gateways {
+      .onp-pm-screen-header, .onp-pl-screen-header {
+        background: @theme-header-bg-color;
+        color: @-header-text-color;
+        border-color: @-header-subline-color;
+      }
+
+      .onp-pm-yandex-payment-form {
+        .onp-pm-pform-table {
+          background: @-pform-table-bg-color;
+          color: @-pform-table-text-color;
+        }
+      }
+
+      .onp-pm-pform-bottom-left-side {
+        color: @-body-text-color;
+      }
+    }
+  }
+
+}
+
+/* ----------------------------------
+ *  Support mixins
+ *-----------------------------------*/
+.darkenColor(@attribute, @color, @persent) when (lightness(@color) < 70) {
+  @{attribute}: lighten(@color, @persent);
+}
+
+.lightenColor(@attribute, @color, @persent) when (lightness(@color) > 70) {
+  @{attribute}: darken(@color, @persent);
+}
+
+.invertColor(@attribute, @color, @persent) {
+  .lightenColor(@attribute, @color, @persent);
+  .darkenColor(@attribute, @color, @persent);
+}

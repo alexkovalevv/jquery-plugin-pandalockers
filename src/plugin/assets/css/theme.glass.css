@@ -1,0 +1,101 @@
+/**
+ * Glass Style
+ * Copyright 2014, OnePress, http://byonepress.com
+
+ * @!preprocess:false
+ * @!priority:0
+ * @!cssmin:true
+ * @!lang:[]
+ * @!build:['premium', 'full-premium']
+ */
+.onp-sl-glass {
+    padding: 15px;
+    border: 0px;
+
+    -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    text-shadow: 0px 1px 1px #fff;
+
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.onp-sl-glass .onp-sl-outer-wrap {
+
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+
+    -webkit-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+
+    background: rgb(247, 247, 247);
+
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(240, 240, 240, 0.6)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(240, 240, 240, 0.6) 100%);
+}
+
+.onp-sl-glass .onp-sl-text .onp-sl-strong:before,
+.onp-sl-glass .onp-sl-text .onp-sl-strong:after {
+    content: " ";
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0 9px;
+    background: url("../img/lock-icon.png") 0px 2px no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+    .onp-sl-glass .onp-sl-text .onp-sl-strong:before,
+    .onp-sl-glass .onp-sl-text .onp-sl-strong:after {
+        display: none;
+    }
+}
+
+.onp-sl-glass .onp-sl-cross {
+    top: 20px;
+    right: 20px;
+}
+
+.onp-sl-glass .onp-sl-timer {
+    right: 23px;
+    bottom: 21px;
+}
+
+/** Youtube button fix */
+.onp-sl-glass .onp-sl-google-youtube .onp-sl-control-inner-wrap {
+    padding: 8px 7px;
+}
+
+.onp-sl-glass .onp-sl-outer-wrap.onp-sl-wrap-elevated {
+    padding-bottom: 26px;
+}
+
+.onp-sl-glass .onp-sl-credential-link {
+    bottom: 20px;
+}
+
+/*!
+ * Glass Style, Connect Buttons
+ * Copyright 2014, OnePress, http://byonepress.com
+*/
+.onp-sl-glass .onp-sl-control {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.03);
+
+    -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,29 @@
+/*
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['free','premium']
+ */
+@import "../mixins.less";
+
+/* --------------------------------
+/* Theme Secrets
+/* -------------------------------*/
+
+.onp-sl-secrets {
+  .onp-sl-mail {
+    .setFlipButtonGradient(#2d7cbb, #064e93, -238px, 7px);
+  }
+}
+
+/* --------------------------------
+/* Theme Flat
+/* -------------------------------*/
+
+.onp-sl-flat {
+  .onp-sl-mail {
+    .setFlipButtonBackground(#2d7cbb, -238px, 7px);
+  }
+}

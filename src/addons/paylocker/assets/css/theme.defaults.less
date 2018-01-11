@@ -1,0 +1,404 @@
+@import "theme.mixin.less";
+
+.button-default() {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  vertical-align: middle;
+  letter-spacing: normal;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s linear 0s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+}
+
+.onp-sl-blurring-mode {
+  .onp-sl {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.onp-sl.onp-sl-paylocker-mode {
+  border-radius: 5px;
+  font-family: "Segoe ui", Helvetica, Arial, san-serif;
+  text-shadow: none !important;
+
+  .onp-sl-group {
+    padding: 35px 10px 25px;
+  }
+
+  .onp-pl-help-link {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: -15px;
+    top: -10px;
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    border: 0;
+    outline: none;
+    text-decoration: underline;
+  }
+
+  .onp-sl-header, .onp-sl-text .onp-sl-strong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 3px solid;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /*.onp-sl-header, .onp-sl-text .onp-sl-strong {
+    color: #dbd6e5;
+    font: normal 26px/30px 'Roboto', sans-serif !important;
+    margin-top: 0;
+  }*/
+
+  .onp-sl-first-group .onp-sl-strong:before, .onp-sl-first-group .onp-sl-strong:after {
+    display: none !important;
+  }
+
+  .onp-sl-message, .onp-sl-message p {
+    font-family: "Segoe ui", Helvetica, Arial, san-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .onp-pl-tables-contanier {
+    text-align: center;
+  }
+
+  .onp-pl-control-separator {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .onp-pl-control-table {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+
+    padding: 20px 0;
+    margin: 0 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    .onp-pl-ctable-header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: 10px 10px 10px 45px;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-align: left;
+      margin: 0;
+      text-indent: 0;
+      border-radius: 5px 5px 0 0;
+    }
+    .onp-pl-ctable-price {
+      font-size: 35px;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      font-family: Tahoma, sans-serif;
+      .onp-pl-ctable-currency {
+        font-size: 16px;
+      }
+    }
+    .onp-pl-ctable-description {
+      font-size: 13px;
+      .onp-pl-control-table-row {
+        padding: 5px 10px;
+      }
+    }
+    .onp-pl-ctable-after-button-text {
+      margin-top: 10px;
+    }
+
+    .onp-pl-ctable-button {
+      .button-default();
+      margin: 20px auto 0;
+      max-width: 150px;
+    }
+
+    .media (mobile, { width: 100%; box-sizing: border-box; margin-left: 0; margin-right: 0; });
+  }
+
+  .onp-pl-bottom-panel {
+    text-align: right;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    a {
+      text-decoration: none;
+      border: 0;
+      background: none;
+    }
+
+    .onp-pl-login-link {
+      float: right;
+      text-align: right;
+
+    }
+    .onp-pl-mailto-link {
+      float: left;
+      text-align: left;
+    }
+
+    .media (mobile, { text-align: center; .onp-pl-login-link, .onp-pl-mailto-link {
+      display: inline-block;
+      float: none;
+    } });
+  }
+
+  /*.onp-sl-single-pricing-table {
+    padding-top: 0;
+    .onp-pl-control-table {
+      display: block;
+      width: auto;
+      background: none;
+      padding: 0;
+    }
+    .onp-pl-ctable-header, .onp-pl-ctable-price, .onp-pl-ctable-before-button-text, .onp-pl-ctable-after-button-text {
+      display: none;
+    }
+    .onp-pl-ctable-button {
+      max-width: 300px;
+    }
+  }*/
+
+  /***
+ * SCREENS
+ */
+  .onp-sl-screen {
+    box-sizing: border-box;
+    padding-top: 50px;
+
+    /*&.onp-sl-screen-enter-email {
+      .onp-sl-button {
+        .button-default();
+        .button-default-color();
+      }
+    }*/
+
+    &.onp-sl-screen-prompt {
+      //background: #fffdb3;
+      padding-bottom: 40px;
+
+      .onp-sl-prompt-button-yes, .onp-sl-prompt-button-no {
+        position: relative;
+        line-height: 18px;
+        padding: 20px 50px;
+        margin: 10px 10px 0 0;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: lighter;
+        text-transform: none;
+        border: 0;
+        box-shadow: none;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      .onp-sl-prompt-text {
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 30px;
+      }
+    }
+
+    .onp-sl-message, .onp-pm-screen-text {
+      font-size: 15px;
+    }
+
+    &.onp-sl-screen-paylocker-payment-gateways {
+
+      .onp-pl-screen-header {
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 20px;
+        border-bottom: 3px solid;
+        border-radius: 5px 5px 0 0;
+        margin: 0;
+      }
+      .onp-pl-screen-text {
+        margin-bottom: 20px;
+        padding: 50px 30px 0;
+        font-size: 15px;
+      }
+
+      .onp-pl-gateways-wrap {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .onp-pl-gateway-button {
+        display: inline-block;
+        width: 170px;
+        height: 100px;
+        border: 1px solid #dedede;
+        background-color: #eee;
+        margin-left: 10px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+          background-color: #f4f4f4;
+        }
+        &.onp-pl-gateway-paypal {
+          background-image: url('../img/paypal-icon.png');
+
+        }
+        &.onp-pl-gateway-yandex-money {
+          background-image: url('../img/yandex-money-icon.png');
+        }
+      }
+    }
+
+    // Screen payment form
+    &.onp-sl-screen-paylocker-payment-form {
+      padding-top: 20px !important;
+
+      .onp-pm-screen-header {
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 20px;
+        border-bottom: 3px solid;
+        border-radius: 5px 5px 0 0;
+        margin: 0;
+      }
+      .onp-pm-screen-text {
+        margin-bottom: 20px;
+        padding: 80px 30px 0;
+      }
+      .onp-pm-yandex-payment-form {
+        text-align: center;
+
+        a {
+          text-decoration: underline;
+          border: 0;
+          &:hover {
+            border: 0;
+          }
+        }
+
+        select[name="paymentType"] {
+          padding: 5px;
+          width: 200px;
+          font-size: 13px;
+          outline: none;
+        }
+
+        .onp-pm-pform-table {
+          //max-width: 535px;
+          width: 550px;
+          height: auto;
+          padding: 45px;
+          margin: 0 auto;
+          text-align: left;
+          border: 0;
+          border-collapse: initial;
+          td {
+            font-size: 16px;
+            border: 0;
+            .onp-pm-pform-alternate-payment-type-link {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .onp-pm-pform-bottom {
+          margin: 0 30px;
+          padding: 15px;
+          .onp-pm-pform-bottom-left-side, .onp-pm-pform-bottom-right-side {
+            display: inline-block;
+            width: 50%;
+          }
+          .onp-pm-pform-bottom-right-side {
+            text-align: right;
+          }
+          .onp-pm-pform-bottom-left-side {
+            text-align: left;
+            font-size: 13px;
+          }
+        }
+
+        .onp-pm-payment-button {
+          position: relative;
+          text-transform: none;
+          box-shadow: none;
+          border: 0;
+          border-bottom: 3px solid #f0cc41;
+          background: #ffe16c;
+          color: #382f0e;
+          line-height: 18px;
+          padding: 9px 12px 6px 12px;
+          border-radius: 3px;
+          font-size: 13px;
+          font-weight: lighter;
+          outline: none;
+          cursor: pointer;
+
+          &.disabled {
+            border-bottom: 3px solid #e4d9b0;
+            background: #f5e8b8;
+            color: #968d6a;
+            cursor: default;
+          }
+        }
+      }
+    }
+    // Screen error
+    &.onp-sl-screen-paylocker-error {
+      /*min-height: 200px;*/
+      padding: 40px;
+      font-size: 16px;
+      background: #ffbcbc;
+      color: #e06161;
+      a, a:link {
+        color: #a75151;
+      }
+    }
+
+    // Screen error
+    &.onp-sl-screen-paylocker-success-payment {
+      /*min-height: 200px;*/
+      padding: 40px;
+      font-size: 16px;
+      background: #efffdd;
+      color: #6f6f6f;
+      .onp-pl-screen-header {
+        font-size: 20px;
+        line-height: 2;
+        color: #53732e;
+      }
+      a, a:link {
+        color: #a75151;
+      }
+    }
+  }
+}

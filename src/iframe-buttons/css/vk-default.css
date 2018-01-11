@@ -1,0 +1,168 @@
+iframe[src*="act=a_stats_box"], .VKWidgetsLoader {
+    display: none !important;
+}
+
+#btn-contanier {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#btn {
+    display: none;
+    position: relative;
+    min-width: 10px;
+    height: 20px;
+    padding: 1px 10px 1px 0;
+    margin-right: 1px;
+    line-height: 1.8;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    text-shadow: none !important;
+    font-size: 11px;
+    color: #fff;
+    background: #5F83AA;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    z-index: 1;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+    box-sizing: content-box;
+}
+
+#btn-contanier.vertical #btn {
+    margin-top: 30px;
+}
+
+#btn.process {
+    background: rgb(185, 185, 185);
+}
+
+#btn.loaded {
+    display: inline-block;
+}
+
+#btn .btn-icon {
+    display: block;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAA7CAYAAACZr7GXAAAABGdBTUEAALGPC/xhBQAAArJJREFUWAntlrtrVEEUxrMxhUgiIiLRwlaEIIKN+IoaRG3UkKBWitj7DyiYf8A+VqKFVr7QYBElbQxGjeCjsfGFNr4WJfG1/r51Jpy9986ducTOHfj2nDnn+76dnb2zsx2NRuMe0LjVwSB2gtcqMH6Axa6+mXxORcZ+1XKDxrlm++/LOhFIR02tx9XuuNpb4pKckSNtMMILrnbW1HrID5n5kUIjX4R41ZF/EbcCazbM/JPrX/eaYIS4BtSd4D3xkcuz4WTQxDZQHc8q3XyC+N3l+gL2WF0wh3gK/HZCH1aTbAGfXUFxbdDENiDuALeB9ukDWKo+sR9oCzRGraadL2AH2Mw+8BC8A8fAUfAKTIG+StYIJoEfP0kEP6aqmvkn3xvY+KWKWSfk8RLBWEkv32IZK8FTuxyXPyAuyysiFUS94LkzUdBBXx6RhduIV4FnzmhFmJnYwagLLEqk/7c09kjf5Bj4CC6CbnAe6LfrBuhN3hzI/jIhbQ6dUTvil4h7txoqHZnm3RhYQb1WqzV/bQP9+bKO08v5WXHyorhcUGVl+4Duy6KhW6m/QBYuIdBvWNZQ/zMGw6qSDkLdm/6ak9FwCT3ewuAEeAMOx9ltxj/bATZ8N9CxEnbKmLgdXAaXwK6kN4M4COzQ36bTYNYWyYeihpBmMqLQ9HHMTAe9Dqk7RqQfPfA66DMJRqLcj/JY2Sbg/2aGPuI3GuujZiJA1JcQMpTRQJKRJyE4WGD4lVraY+GNfER4wBjKqPnM+X7liMFecBNsqyxuCxa+A9cmps9kXVQbn3zSmJ3T1dA6VFMvp7tyd3pEjayZ5r5nDb2Rei0aS25pmInlJBnpQxh9LvWG+gSlK/K7kXPIFGSSM4LTleElTYcGNo4EiX7pfnODxNSGNUzVlPK8YSmpSjP38FUQ/wFdLkenTFLauwAAAABJRU5ErkJggg==');
+    background-position: 0px 0px;
+    height: 8px;
+    width: 14px;
+    margin: 3px 0 0 1px;
+}
+
+#btn span {
+    display: inline-block;
+    padding: 0px;
+}
+
+#btn .btn-left-side {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    float: left;
+    border-right: 1px solid #87a2bf;
+    border-right-color: rgba(255, 255, 255, 0.24);
+    padding-left: 5px;
+    padding-right: 1px;
+    margin: 3px 8px 0 0;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: content-box;
+}
+
+#btn:hover {
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.1);
+}
+
+#btn.confirmation {
+    background: #8D969E;
+}
+
+#btn-counter {
+    position: relative;
+    display: none;
+    vertical-align: top;
+    min-width: 15px;
+    border: 1px solid #adbdcc;
+    color: #55677d;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 4px 6px 4px;
+    margin-left: 8px;
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    line-height: 12px;
+    background: #ffffff;
+}
+
+#btn-contanier.vertical #btn-counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+}
+
+#btn-counter.show {
+    display: inline-block !important;
+}
+
+#btn-counter:after, #btn-counter:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-right-color: #608ab1;
+    z-index: 1;
+}
+
+#btn-counter:before {
+    display: block;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    left: -10px;
+    border-right-color: #fff;
+    z-index: 9;
+}
+
+#btn-contanier.vertical #btn-counter:after, #btn-contanier.vertical #btn-counter:before {
+    bottom: -12px;
+    top: auto;
+    left: 80%;
+    margin-top: 0;
+    margin-left: -6px;
+    border: 6px solid transparent;
+    border-top-color: #608ab1;
+}
+
+#btn-contanier.vertical #btn-counter:before {
+    margin-left: -5px;
+    border: 5px solid transparent;
+    bottom: -10px;
+    border-top-color: #fff;
+}
+
+.btn-clickja-verify {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.btn-clickja-verify iframe {
+    position: absolute;
+    /*top:-190px; left:-30px;*/
+    z-index: 9;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}

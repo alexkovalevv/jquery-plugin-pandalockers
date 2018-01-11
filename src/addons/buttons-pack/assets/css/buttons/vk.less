@@ -1,0 +1,53 @@
+/*
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['free','premium']
+ */
+@import "../mixins.less";
+
+/* -------------------------------
+/* Theme Secrets
+/* -------------------------------*/
+
+.onp-sl-secrets {
+  .onp-sl-vk-share, .onp-sl-vk-subscribe, .onp-sl-vk-like, .onp-sl-vk-notify {
+    .setFlipButtonGradient(#64a0bc, #597a9f, -171px, 9px);
+  }
+
+  .onp-vk-subscribe-button {
+    min-width: 130px;
+  }
+}
+
+/* --------------------------------
+/* Theme Flat
+/* -------------------------------*/
+.onp-sl-flat {
+  .onp-sl-vk-share, .onp-sl-vk-subscribe, .onp-sl-vk-like, .onp-sl-vk-notify {
+    .setFlipButtonBackground(#64a0bc, -170px, 9px);
+  }
+  .onp-vk-subscribe-button {
+    min-width: 82px;
+  }
+}
+
+/* --------------------------------
+/* Theme dandyish
+/* -------------------------------*/
+.onp-sl-dandyish {
+  .onp-sl-vk {
+    .onp-sl-social-button {
+      margin-top: 5px;
+    }
+  }
+
+  .onp-sl-vk-share, .onp-sl-vk-subscribe {
+    min-width: 136px;
+    .onp-sl-control-inner-wrap {
+      min-width: 136px;
+    }
+  }
+}

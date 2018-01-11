@@ -1,0 +1,103 @@
+/**
+ * Theme glasscase
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 28.04.2017
+
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['popup-mode']
+ */
+.onp-sl-overlap-box.onp-sl-gifts-theme.onp-sl-blurring-mode .onp-sl-overlap-background {
+  opacity: 0.6;
+}
+.onp-sl-overlap-box.onp-sl-gifts-theme .onp-sl-overlap-background {
+  background: #363c00 url('../img/906741-town-wallpaper.png') repeat;
+}
+.onp-sl.onp-sl-gifts {
+  max-width: 700px;
+  background: #fff url('../img/906741-town-wallpaper.png') no-repeat;
+}
+.onp-sl.onp-sl-gifts .onp-sl-cross {
+  top: 15px;
+  right: 15px;
+  opacity: 0.4;
+}
+.onp-sl.onp-sl-gifts .onp-sl-group {
+  min-height: 300px;
+  padding: 0 0 0 300px;
+  background: #cddc39 url('../img/discount-air-boobles.jpg') left center no-repeat;
+}
+.onp-sl.onp-sl-gifts .onp-sl-group-inner-wrap {
+  padding: 15px 15px 30px;
+}
+.onp-sl.onp-sl-gifts .onp-sl-group-inner-wrap:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.onp-sl.onp-sl-gifts .onp-sl-text {
+  padding: 10px;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-shadow: none;
+}
+.onp-sl.onp-sl-gifts .onp-sl-text,
+.onp-sl.onp-sl-gifts .onp-sl-text p {
+  color: #495000;
+  font-size: 15px;
+}
+.onp-sl.onp-sl-gifts .onp-sl-text .onp-sl-header {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.onp-sl.onp-sl-gifts .onp-sl-text .onp-sl-header:after,
+.onp-sl.onp-sl-gifts .onp-sl-text .onp-sl-header:before {
+  display: none !important;
+}
+.onp-sl.onp-sl-gifts .onp-sl-text .onp-sl-message {
+  min-height: 100px;
+}
+.onp-sl.onp-sl-gifts .onp-sl-group-notice {
+  background-color: rgba(255, 193, 7, 0.27);
+  color: #988447 !important;
+}
+.onp-sl.onp-sl-gifts .onp-sl-error-title {
+  background-color: #b53737 !important;
+}
+.onp-sl.onp-sl-gifts .onp-sl-group-error,
+.onp-sl.onp-sl-gifts .onp-sl-locker-error {
+  background-color: rgba(210, 19, 19, 0.48) !important;
+}
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-front,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-header,
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-state-error.onp-sl-control .onp-sl-overlay-back {
+  background-color: #b53737 !important;
+}
+.onp-sl.onp-sl-gifts .onp-sl-social-buttons .onp-sl-control {
+  background: rgba(255, 255, 255, 0.22);
+}
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons .onp-sl-button {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons .onp-sl-button.onp-sl-state-loading,
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons .onp-sl-button.onp-sl-state-error {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+}
+.onp-sl.onp-sl-gifts .onp-sl-connect-buttons .onp-sl-state-loading .onp-sl-control-inner-wrap {
+  background-image: url("../img/button-loader-e4e4e4.gif");
+}
+.onp-sl.onp-sl-gifts .onp-sl-subscription .onp-sl-input {
+  background: rgba(219, 219, 219, 0.57);
+  border: 2px solid #504d4d;
+}
+.onp-sl.onp-sl-gifts .onp-sl-subscription .onp-sl-button {
+  background-color: #565656;
+  color: #e0e0e0;
+}
+.onp-sl.onp-sl-gifts .onp-sl-subscription .onp-sl-button.load:before {
+  background: url('../img/button-loader-565656.gif');
+}

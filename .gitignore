@@ -1,0 +1,12 @@
+/node_modules/*
+/temp/
+/tmp/
+/dist/
+dist/
+/dist
+/nbproject
+/.idea
+.idea/
+!/node_modules/grunt-onpress-preprocess/
+!/node_modules/grunt-insert/
+npm-debug.log

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example</title>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery.ui.highlight.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/moment.js"></script>
+    <script src="js/libs/pikaday.js"></script>
+    <script src="js/pandalocker.<%= pkg.version %>.js?5"></script>
+    <link type="text/css" rel="stylesheet" href="css/pandalocker.<%= pkg.version %>.min.css"/>
+    <style>
+        #wizard {
+            width: 240px;
+            position: fixed;
+            top: 30%;
+            left: 0px;
+            margin-top: -100px;
+
+            background-color: #f9f9f9;
+            border: 0px;
+        }
+
+        #wizard fieldset {
+            border: 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script>
+		(function($) {
+
+			var wizard = {
+
+				init: function() {
+
+					this.setupEvents();
+
+					this.restoreValues();
+					this.refreshLocker();
+				},
+
+				setupEvents: function() {
+					var self = this;
+
+					$("#wizard").find("select, input, textarea").change(function() {
+						self.saveValues();
+						self.refreshLocker();
+					});
+				},
+
+				restoreValues: function() {
+					if( !localStorage ) {
+						return;
+					}
+
+					$("#wizard").find("select, input[type=text], textarea").each(function() {
+						var key = 'wizard-' + $(this).attr('id');
+						var value = localStorage.getItem(key);
+						$(this).val(value);
+					});
+
+					$("#wizard").find("input[type=checkbox]").each(function() {
+						var key = 'wizard-' + $(this).attr('id');
+						var value = parseInt(localStorage.getItem(key));
+						if( value ) {
+							$(this).attr('checked', 'checked');
+						} else {
+							$(this).removeAttr('checked');
+						}
+					});
+				},
+
+				saveValues: function() {
+					if( !localStorage ) {
+						return;
+					}
+
+					$("#wizard").find("select, input[type=text], textarea").each(function() {
+						var key = 'wizard-' + $(this).attr('id');
+						localStorage.setItem(key, $(this).val());
+					});
+
+					$("#wizard").find("input[type=checkbox]").each(function() {
+						var key = 'wizard-' + $(this).attr('id');
+						localStorage.setItem(key, $(this).is(":checked") ? 1 : 0);
+					});
+				},
+
+				refreshLocker: function() {
+					this.reset();
+
+					var options = this.getOptions();
+
+					var $original = $(".to-lock");
+					this.$content = $original.clone();
+					$original.after(this.$content);
+
+					this.$content.pandalocker(options);
+				},
+
+				reset: function() {
+					if( !this.$content ) {
+						return;
+					}
+
+					this.$content.remove();
+					this.$content = null;
+
+					$(".onp-sl").remove();
+				},
+
+				getOptions: function() {
+
+					var options = {
+
+						demo: true,
+						proxy: 'proxy.php',
+						googleAnalytics: true,
+						lazy: false,
+
+						locker: {
+							close: true,
+							timer: 999
+							// visibility: [{"conditions":[{"type":"scope","conditions":[{"param":"user-mobile","operator":"equals","value":["no","yes"]}]}],"type":"showif"}]
+						},
+						text: {
+							message: 'Please subscribe to unlock this content for free. Just enter your email.'
+						},
+
+						socialButtons: {
+
+							order: ["facebook-like"],
+							//   order: ["facebook-like", "facebook-share", "linkedin-share", "youtube-subscribe", "twitter-tweet", "twitter-follow",  "google-plus", "google-share"],
+
+							facebook: {
+								appId: "<%= pkg.facebook.appId %>",
+								url: "https://www.socialmedialernen.com/schulen/schulen-haben-die-zukunft-in-den-akten-und-nicht-im-sinn/",
+							},
+							linkedin: {
+								share: {
+									url: 'http://google.com'
+								}
+							},
+							twitter: {
+								tweet: {
+									text: 'Please subscribe to unlock this content for free. &#dfdfdf'
+								},
+								follow: {
+									url: 'https://twitter.com/obama2'
+								}
+							},
+							google: {
+								url: "https://www.socialmedialernen.com/schulen/schulen-haben-die-zukunft-in-den-akten-und-nicht-im-sinn/"
+							},
+							youtube: {
+								subscribe: {
+									clientId: '382836380554-goon795uemd05gcatdj1aqqr5k5a7dla.apps.googleusercontent.com',
+									channelId: 'UCkL2jolLeEjcS_Iuj71KwHw'
+								}
+							}
+						},
+						connectButtons: {
+							order: ["facebook", "google", "linkedin"],
+
+							facebook: {
+								actions: ['subscribe'],
+								appId: "<%= pkg.facebook.appId %>"
+							},
+
+							twitter: {
+								actions: ['subscribe'],
+								tweet: {
+									message: 'dfdfdf'
+								},
+								follow: {
+									user: 'loha'
+								}
+							},
+
+							google: {
+								actions: ['signup', 'subscribe'],
+								clientId: '642761563343-vv9fe5dj1c404kv9ec6lus9eg9jpq01m.apps.googleusercontent.com',
+
+								youtubeSubscribe: {
+									channelId: 'UCkL2jolLeEjcS_Iuj71KwHw'
+								}
+							},
+
+							linkedin: {
+								actions: ['subscribe'],
+								follow: {
+									company: 3289066
+								}
+							}
+						},
+						subscription: {
+							form: {
+								type: 'custom-form',
+
+								/**
+								 fields: [
+								 {
+                                     'id': 'email',
+                                     'type': 'email',
+                                     'placeholder': 'Your Email',
+                                     'icon': 'fa-envelope-o',
+                                     'iconPosition': 'left',
+                                     'req': true
+                                 }
+								 ]*/
+
+								fields: [
+									{
+										'id': 'fullname',
+										'type': 'text',
+										'placeholder': 'Your Name',
+										'icon': 'fa-male',
+										'req': true,
+										'validation': 'month',
+										'password': true
+									},
+									{
+										'id': 'email',
+										'type': 'email',
+										'placeholder': 'Your Email',
+										'icon': 'fa-envelope-o',
+										'iconPosition': 'left',
+										'req': true
+									},
+									{
+										'id': 'birthday',
+										'type': 'birthday',
+										'placeholder': 'Your Birthday',
+										'icon': 'fa-birthday-cake',
+										'req': true
+									},
+									{
+										'type': 'separator'
+									},
+									{
+										'id': 'number',
+										'type': 'integer',
+										'title': 'Your Age',
+										'placeholder': 'Your Age',
+										'icon': 'fa-graduation-cap',
+										'min': 20,
+										'max': 40
+									},
+									{
+										'type': 'separator'
+									},
+									{
+										'id': 'dropdown',
+										'type': 'dropdown',
+										'title': 'Role In Company',
+										'choices': ['CEO', 'CTO', 'CSO']
+									},
+									{
+										'type': 'separator'
+									},
+									{
+										'id': 'phone',
+										'type': 'phone',
+										'title': 'Also provide some other details:',
+										'mask': '(999) 999-99-99',
+										'placeholder': '(###) ###-##-##',
+										'icon': 'fa-phone',
+										'req': true
+									},
+									{
+										'id': 'website',
+										'type': 'url',
+										'placeholder': 'http://',
+										'icon': 'fa-globe'
+									},
+									{
+										'type': 'label',
+										'text': 'I\'m Interested In'
+									},
+									{
+										'id': 'checkbox',
+										'type': 'checkbox',
+										'description': 'Web Design & Development',
+										'onValue': 1,
+										'offValue': 0,
+										'markedByDefault': true,
+										'icon': 'fa-globe',
+										'req': true
+									},
+									{
+										'id': 'checkbox2',
+										'type': 'checkbox',
+										'description': 'Mobile App Development',
+										'onValue': 1,
+										'offValue': 0,
+										'icon': 'fa-globe'
+									},
+									{
+										'id': 'checkbox3',
+										'type': 'checkbox',
+										'description': 'WordPress Themes & Plugins',
+										'onValue': 1,
+										'offValue': 0,
+										'icon': 'fa-globe'
+									}
+								]
+							}
+						},
+
+						// aweber
+						subscribeActionOptions: {
+							service: 'aweber',
+							listId: '3743002',
+							doubleOptin: true,
+							confirm: true,
+							requireName: false
+						}
+					};
+
+					options.theme = $("#locker-theme").val();
+
+					var lockerType = $("#locker-type").val();
+					switch( lockerType ) {
+						case 'email-locker':
+							options.groups = ['subscription'];
+							break;
+						case 'email-locker-2':
+							options.groups = ['subscription', 'connect-buttons'];
+							break;
+						case 'connect-locker':
+							options.groups = ['connect-buttons'];
+							break;
+						case 'connect-locker-2':
+							options.groups = ['connect-buttons', 'subscription'];
+							break;
+						case 'social-locker':
+							options.groups = ['social-buttons'];
+							break;
+					}
+
+					if( $("#locker-blurring").is(":checked") ) {
+						options.overlap = {
+							mode: 'blurring'
+						};
+					}
+
+					if( $("#locker-terms").is(":checked") ) {
+						options.terms = 'http://google.com';
+						options.privacyPolicy = 'http://yandex.ru';
+						options.termsPopup = {
+							width: 550,
+							height: 400
+						};
+					}
+
+					return options;
+				}
+			};
+
+			$(function() {
+				wizard.init();
+
+				$("#button").click(function() {
+					$("#locker-wrap").show();
+					return false;
+				});
+			});
+
+		})(jQuery);
+    </script>
+</head>
+<body>
+<form id="wizard">
+    <fieldset>
+        <p>
+            <label for="locker-type">Type:</label>
+            <select id="locker-type">
+                <option value="email-locker">Email Locker</option>
+                <option value="email-locker-2">Email Locker (+ Social Buttons)</option>
+                <option value="connect-locker">Connect Locker</option>
+                <option value="connect-locker-2">Connect Locker (+ Email Form)</option>
+                <option value="social-locker">Social Locker</option>
+            </select>
+        </p>
+        <p>
+            <label for="locker-them">Theme:</label>
+            <select id="locker-theme">
+                <option value="great-attractor">Great Attractor</option>
+                <option value="friendly-giant">Friendly Giant</option>
+                <option value="dark-force">Dark Force</option>
+                <option value="starter">Starter</option>
+                <option value="secrets">Secrets</option>
+                <option value="dandyish">Dandyish</option>
+                <option value="glass">Glass</option>
+                <option value="flat">Flat</option>
+            </select>
+        </p>
+        <p>
+            <label for="locker-blurring"><input type="checkbox" id="locker-blurring"/>Blur the content</label>
+        </p>
+        <p>
+            <label for="locker-terms"><input type="checkbox" id="locker-terms"/>Show Terms & Privacy</label>
+        </p>
+    </fieldset>
+</form>
+<article>
+    <!--header>
+            <h2>Locker Wizard</h2>
+        <p>Use the options at the left to configure your locker.</p>
+        </header-->
+    <section class="example">
+        <p>Etiam ante est, porttitor quis quam et, convallis malesuada sapien. Ut viverra sed lectus et egestas. Proin
+            luctus metus a libero feugiat blandit. </p>
+        <div id="locker-wrap">
+            <div class="to-lock" style="display: none; background-color: #fffff0; padding: 10px 20px;">
+                <p><strong>Congratulation, the content is unlocked!</strong></p>
+                <p>Lorem ipsu.</p>
+                <p><strong>Congratulation, the content is unlocked!</strong></p>
+                <p>Lorem ipsu.</p>
+                <p><strong>Congratulation, the content is unlocked!</strong></p>
+                <p>Lorem ipsu.</p>
+                <p><strong>Congratulation, the content is unlocked!</strong></p>
+                <p>Lorem ipsu.</p>
+            </div>
+        </div>
+        <p>Cras id massa ac nisi volutpat pretium et fringilla odio. Donec arcu lorem, bibendum eget fermentum eget,
+            porta vel dolor. Fusce ut leo et purus eleifend sodales.</p>
+    </section>
+    <div>
+        <a href="#" id="button">Показать Показать Показать Показать Показать Показать</a>
+    </div>
+</article>
+</body>
+</html>

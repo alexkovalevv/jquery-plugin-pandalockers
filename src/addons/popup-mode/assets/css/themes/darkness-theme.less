@@ -1,0 +1,175 @@
+/**
+ * Theme conversion for popup mode
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 28.04.2017
+
+ * @!jsObfuscate:false
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['popup-mode']
+ */
+
+.onp-sl-overlap-box.onp-sl-darkness-theme {
+  &.onp-sl-blurring-mode {
+    .onp-sl-overlap-background {
+      opacity: 0.6;
+    }
+  }
+  .onp-sl-overlap-background {
+    background: #000 url('../img/lock-content-img.png') repeat;
+  }
+}
+
+.onp-sl.onp-sl-darkness {
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+  }
+
+  background: rgba(0, 0, 0, 0.8); //url('../img/906741-town-wallpaper.png') no-repeat;
+  border: 3px dashed #cab814;
+
+  .onp-sl-cross {
+    background: url('../img/close-white.png') 50% 50% no-repeat;
+    opacity: 0.4;
+  }
+
+  .onp-sl-cross:hover {
+    opacity: 0.8;
+  }
+
+  .onp-sl-timer {
+    color: #fff;
+    position: static;
+    display: block;
+    text-align: center;
+    padding: 10px 0 20px;
+  }
+
+  .onp-sl-timer-counter {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .onp-sl-text {
+    padding: 10px 20px;
+    font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-shadow: none;
+    &, p {
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .onp-sl-strong {
+      font-size: 30px;
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+    /*.onp-sl-message {
+
+    }*/
+  }
+
+  /*.onp-sl-group {
+    padding: 0;
+  }*/
+
+  .onp-sl-first-group {
+    .onp-sl-strong:before, .onp-sl-strong:after {
+      display: none;
+    }
+  }
+
+  .onp-sl-subscription {
+    .onp-sl-button-primary {
+      color: #694f01;
+      &.load:before {
+        background: url('../img/button-loader-ffc107.gif');
+      }
+    }
+    .onp-sl-input {
+      font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1;
+      background: none;
+      border: 2px solid #545454;
+      box-shadow: none;
+      color: #b5b5b5;
+    }
+  }
+
+  .onp-sl-group-notice {
+    background-color: rgba(31, 29, 8, 0.58);
+    color: #737171 !important;
+  }
+
+  .onp-sl-group-error, .onp-sl-locker-error {
+    background: rgba(72, 8, 8, 0.4) !important;
+    color: #948282 !important;
+  }
+
+  .onp-sl-screen {
+    font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 15px;
+
+    .onp-sl-button-primary {
+      background-color: #FFC107;
+      color: #222;
+    }
+
+    &.onp-sl-screen-data-processing {
+      .onp-sl-process-spin {
+        height: 150px;
+        background: url('../img/ring-loader-white.gif') center no-repeat;
+      }
+      .onp-sl-processing-sreen-text {
+        color: #fff;
+      }
+    }
+  }
+
+  .onp-sl-connect-buttons {
+    &.onp-sl-connect-buttons-style-great-attractor {
+      .onp-sl-state-loading,
+      .onp-sl-state-error {
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: none !important;
+        border: none;
+        &:hover {
+          box-shadow: none;
+          background: rgba(0, 0, 0, 0.4);
+        }
+      }
+      .onp-sl-state-loading .onp-sl-control-inner-wrap {
+        background-image: url("../img/button-loader-232323.gif") !important;
+      }
+    }
+
+    &.onp-sl-connect-buttons-style-dark-force {
+      .onp-sl-icon {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .16);
+      }
+      .onp-sl-state-loading .onp-sl-control-inner-wrap {
+        background-image: url("../img/button-loader-232323.gif") !important;
+      }
+    }
+  }
+
+}

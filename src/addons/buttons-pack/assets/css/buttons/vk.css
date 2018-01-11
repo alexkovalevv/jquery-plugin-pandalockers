@@ -1,0 +1,90 @@
+/*
+ * @!preprocess:false
+ * @!cssmin:true
+ * @!priority:0
+ * @!autoprefixer:true
+ * @!lang:[]
+ * @!build:['free','premium']
+ */
+/* -------------------------------
+/* Theme Secrets
+/* -------------------------------*/
+.onp-sl-secrets .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl-secrets .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl-secrets .onp-sl-vk-like .onp-sl-overlay-front,
+.onp-sl-secrets .onp-sl-vk-notify .onp-sl-overlay-front {
+  background: #64a0bc;
+  background: -moz-linear-gradient(top, #64a0bc 0%, #597a9f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64a0bc), color-stop(100%, #597a9f));
+  background: -webkit-linear-gradient(top, #64a0bc 0%, #597a9f 100%);
+  background: -o-linear-gradient(top, #64a0bc 0%, #597a9f 100%);
+  background: -ms-linear-gradient(top, #64a0bc 0%, #597a9f 100%);
+  background: linear-gradient(to bottom, #64a0bc 0%, #597a9f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#64a0bc', endColorstr='#597a9f', GradientType=0);
+}
+.onp-sl-secrets .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl-secrets .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl-secrets .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl-secrets .onp-sl-vk-notify .onp-sl-overlay-icon {
+  background-position: -171px 9px;
+}
+.onp-sl-secrets .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl-secrets .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl-secrets .onp-sl-vk-like .onp-sl-overlay-back,
+.onp-sl-secrets .onp-sl-vk-notify .onp-sl-overlay-back {
+  background: #64a0bc;
+}
+.onp-sl-secrets .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl-secrets .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl-secrets .onp-sl-vk-like .onp-sl-overlay-header,
+.onp-sl-secrets .onp-sl-vk-notify .onp-sl-overlay-header {
+  background-color: #4888a5;
+}
+.onp-sl-secrets .onp-vk-subscribe-button {
+  min-width: 130px;
+}
+/* --------------------------------
+/* Theme Flat
+/* -------------------------------*/
+.onp-sl-flat .onp-sl-vk-share .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-vk-subscribe .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-vk-like .onp-sl-overlay-front,
+.onp-sl-flat .onp-sl-vk-notify .onp-sl-overlay-front {
+  background-color: #64a0bc;
+  border-bottom-color: #4888a5;
+}
+.onp-sl-flat .onp-sl-vk-share .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-vk-subscribe .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-vk-like .onp-sl-overlay-icon,
+.onp-sl-flat .onp-sl-vk-notify .onp-sl-overlay-icon {
+  background-position: -170px 9px;
+}
+.onp-sl-flat .onp-sl-vk-share .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-vk-subscribe .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-vk-like .onp-sl-overlay-back,
+.onp-sl-flat .onp-sl-vk-notify .onp-sl-overlay-back {
+  background: #64a0bc;
+}
+.onp-sl-flat .onp-sl-vk-share .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-vk-subscribe .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-vk-like .onp-sl-overlay-header,
+.onp-sl-flat .onp-sl-vk-notify .onp-sl-overlay-header {
+  background-color: #4888a5;
+}
+.onp-sl-flat .onp-vk-subscribe-button {
+  min-width: 82px;
+}
+/* --------------------------------
+/* Theme dandyish
+/* -------------------------------*/
+.onp-sl-dandyish .onp-sl-vk .onp-sl-social-button {
+  margin-top: 5px;
+}
+.onp-sl-dandyish .onp-sl-vk-share,
+.onp-sl-dandyish .onp-sl-vk-subscribe {
+  min-width: 136px;
+}
+.onp-sl-dandyish .onp-sl-vk-share .onp-sl-control-inner-wrap,
+.onp-sl-dandyish .onp-sl-vk-subscribe .onp-sl-control-inner-wrap {
+  min-width: 136px;
+}
